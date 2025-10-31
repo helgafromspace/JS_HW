@@ -1,11 +1,18 @@
 function pow(x, n){
-    let result = 1
-    for (let i = 1; i <= n; i++){
-        result *= x
+        let result = 1;
+    if (x == 0){
+        result = 0;
+    }
+    else{
+        for (let i = 1; i <= n; i++){
+          result *= x;
+    }
     }
     return result
 }
 
+console.log(pow(0,1))// 0
+console.log(pow(1,5)) // 0
 console.log(pow(2,0)) // 1
 console.log(pow(2,1)) // 2
 console.log(pow(2,2)) // 4
