@@ -11,8 +11,8 @@ function pow(x, n){
     return result
 }
 
+console.log(pow(1,5)) // 1
 console.log(pow(0,1))// 0
-console.log(pow(1,5)) // 0
 console.log(pow(2,0)) // 1
 console.log(pow(2,1)) // 2
 console.log(pow(2,2)) // 4
