@@ -9,7 +9,7 @@ function checkProbabilityTheory(count){
         // console.log(countEven)
         // console.log(countOdd)
         }
-        let evenToOddPercent = (countOdd != 0) ? `${(countEven  / countOdd) * 100} %`: 'Непарних чисел не сгенеровано';// якщо буде 0 непарних то в результаті отримаємо Infinity
+        let evenToOddPercent = (countOdd != 0) ? `${(countEven  / countOdd) * 100} %`: 'Непарних чисел не сгенеровано';// якщо буде 0 непарних то в результаті отримаємо Infinity, тому прописуємо як не сгенеровано
         return `Кількість згенерованих чисел: ${count}; Кількість парних: ${countEven}; Кількість непарних:${countOdd}; Відсоток парних до непарних:${evenToOddPercent}`;
     } else {
         return 'Змінна count повинна бути цілим числом!';
