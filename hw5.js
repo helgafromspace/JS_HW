@@ -2,7 +2,7 @@ var services = {
 "стрижка": "60 грн",
 "гоління": "80 грн",
 "Миття голови": "100 грн",
-'price': function() {
+price: function() {
     let sum = 0;
     for (key in services){
         if (typeof(services[key]) == 'string'){
@@ -12,7 +12,7 @@ var services = {
     }
     return `sum ${sum}`
 },
-'minPrice': function (){
+minPrice: function (){
     min = Infinity
     for (key in services){
         if (typeof(services[key]) == 'string'){
@@ -24,7 +24,7 @@ var services = {
         }
     return `min ${min}`
     },
-'maxPrice': function (){
+maxPrice: function (){
     max = 0
     for (key in services){
         if (typeof(services[key]) == 'string'){
