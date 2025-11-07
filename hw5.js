@@ -10,7 +10,7 @@ price: function() {
             sum += num;
         }
     }
-    return `sum ${sum}`
+    return `Загальна вартість послуг: ${sum}`
 },
 minPrice: function (){
     min = Infinity
@@ -22,7 +22,7 @@ minPrice: function (){
             }
         }
     }
-    return `min ${min}`
+    return `Мінімальна ціна послуги: ${min}`
 },
 maxPrice: function (){
     max = 0
@@ -34,7 +34,7 @@ maxPrice: function (){
             }
         }
     }
-    return `max ${max}`
+    return `Максимальна ціна послуги: ${max}`
 }
 }
 
