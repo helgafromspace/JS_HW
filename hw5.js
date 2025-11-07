@@ -45,12 +45,12 @@ console.log(services.minPrice())
 console.log(services.maxPrice())
 
 services['Розбити скло'] = '200 грн';
-console.log(Object.keys(services))//дивимось, що властивість додалась в об'єкт та параметри суми та максимуму змінились
+console.log(Object.keys(services))//дивимось, що властивість додалась в об'єкт та значення суми та максимуму змінились
 console.log(services.price())
 console.log(services.minPrice())
 console.log(services.maxPrice())
 
-services['Почистити вуха'] = '50 грн';//дивимось, що властивість додалась в об'єкт та параметри суми та мінімуму змінились
+services['Почистити вуха'] = '50 грн';//дивимось, що властивість додалась в об'єкт та значення суми та мінімуму змінились
 console.log(Object.keys(services))
 console.log(services.price())
 console.log(services.minPrice())
