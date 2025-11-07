@@ -59,7 +59,7 @@ console.log(services.price());
 console.log(services.minPrice());
 console.log(services.maxPrice());
 
-services.setProperty('Манікюр', '250 грн');
+services.setProperty('Манікюр', '250 грн');//дивимось, що властивість додалась в об'єкт та значення суми та максимуму змінились
 console.log(Object.keys(services));
 console.log(services.price());
 console.log(services.minPrice());
