@@ -35,23 +35,32 @@ maxPrice: function (){
         }
     }
     return `Максимальна ціна послуги: ${max}`
+},
+setProperty: function(name, value){
+    services[name] = value;
 }
 }
 
 
-console.log(Object.keys(services))
-console.log(services.price())
-console.log(services.minPrice())
-console.log(services.maxPrice())
+console.log(Object.keys(services));
+console.log(services.price());
+console.log(services.minPrice());
+console.log(services.maxPrice());
 
 services['Розбити скло'] = '200 грн';
-console.log(Object.keys(services))//дивимось, що властивість додалась в об'єкт та значення суми та максимуму змінились
-console.log(services.price())
-console.log(services.minPrice())
-console.log(services.maxPrice())
+console.log(Object.keys(services));//дивимось, що властивість додалась в об'єкт та значення суми та максимуму змінились
+console.log(services.price());
+console.log(services.minPrice());
+console.log(services.maxPrice());
 
 services['Почистити вуха'] = '50 грн';//дивимось, що властивість додалась в об'єкт та значення суми та мінімуму змінились
-console.log(Object.keys(services))
-console.log(services.price())
-console.log(services.minPrice())
-console.log(services.maxPrice())
+console.log(Object.keys(services));
+console.log(services.price());
+console.log(services.minPrice());
+console.log(services.maxPrice());
+
+services.setProperty('Манікюр', '250 грн');
+console.log(Object.keys(services));
+console.log(services.price());
+console.log(services.minPrice());
+console.log(services.maxPrice());
