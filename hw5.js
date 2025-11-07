@@ -20,10 +20,10 @@ minPrice: function (){
             if(num < min){
                 min = num;
             }
-            }
         }
+    }
     return `min ${min}`
-    },
+},
 maxPrice: function (){
     max = 0
     for (key in services){
@@ -32,10 +32,10 @@ maxPrice: function (){
             if(num > max){
                 max = num;
             }
-            }
         }
+    }
     return `max ${max}`
-},
+}
 }
 
 
