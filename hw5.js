@@ -4,7 +4,7 @@ var services = {
 "Миття голови": "100 грн",
 price: function() {
     let sum = 0;
-    for (key in services){
+    for (const key in services){
         if (typeof(services[key]) == 'string'){
             let num = parseInt(services[key]);
             sum += num;
@@ -14,7 +14,7 @@ price: function() {
 },
 minPrice: function (){
     min = Infinity
-    for (key in services){
+    for (const key in services){
         if (typeof(services[key]) == 'string'){
             let num = parseInt(services[key]);
             if(num < min){
@@ -26,7 +26,7 @@ minPrice: function (){
 },
 maxPrice: function (){
     max = 0
-    for (key in services){
+    for (const key in services){
         if (typeof(services[key]) == 'string'){
             let num = parseInt(services[key]);
             if(num > max){
