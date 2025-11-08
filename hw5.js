@@ -1,3 +1,5 @@
+'use strict'
+
 var services = {
 "стрижка": "60 грн",
 "гоління": "80 грн",
@@ -13,7 +15,7 @@ price: function() {
     return `Загальна вартість послуг: ${sum}`
 },
 minPrice: function (){
-    min = Infinity
+    let min = Infinity
     for (const key in services){
         if (typeof(services[key]) == 'string'){
             let num = parseInt(services[key]);
@@ -25,7 +27,7 @@ minPrice: function (){
     return `Мінімальна ціна послуги: ${min}`
 },
 maxPrice: function (){
-    max = 0
+    let max = 0
     for (const key in services){
         if (typeof(services[key]) == 'string'){
             let num = parseInt(services[key]);
