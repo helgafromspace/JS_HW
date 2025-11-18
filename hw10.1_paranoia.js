@@ -22,7 +22,7 @@ var arr = [
 ];
 
 let arrToString = JSON.stringify(arr);
-// console.log(arrToString)
+console.log(arrToString)
 let re = /\w+[@]gmail.com|\w+[.]\w+[@]gmail.com|\w+[@]yahoo.com|\w+[.]\w+[@]yahoo.com/g;
 let res = arrToString.match(re);
 console.log(res)
