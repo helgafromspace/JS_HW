@@ -1,0 +1,249 @@
+{
+	"info": {
+		"_postman_id": "16407474-5adc-4aa9-9cd2-22ba1c40a9d0",
+		"name": "Book ISBN Numbers",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18802411"
+	},
+	"item": [
+		{
+			"name": "Is Valid ISBN13 Number",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"",
+							"const $ = cheerio.load(pm.response.text(),{",
+							"    xmlMode: true",
+							"});",
+							"",
+							"console.log($('Headers'))",
+							"const res = $('m\\\\:IsValidISBN13Result').text()",
+							"console.log(res)",
+							"",
+							"pm.test(\"Response body contains element\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"<m:IsValidISBN13Result>\");",
+							"});",
+							"",
+							"pm.test(\"Response body contains expected value\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"<m:IsValidISBN13Result>true</m:IsValidISBN13Result>\");",
+							"});",
+							"",
+							"pm.test(\"Check ISBN13 is true\", function () {",
+							"    pm.expect(res).to.eql('true');",
+							"});",
+							"",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"// Довжина: ISBN-10 має 10 цифр, ISBN-13 — 13.",
+							"// Префікс: ISBN-13 завжди починається з префіксів 978 або 979, що вказує на те, що це книга, чого немає в ISBN-10.",
+							"// Структура: ISBN-13 складається з п'яти частин (включаючи префікс 3 цифри), а ISBN-10 — з чотирьох.",
+							"",
+							"let isbn_number = pm.collectionVariables.get(\"ISBN13_number\");",
+							"let isbn_number_joined = isbn_number.split('-').join('');",
+							"let isbn_number_splited = isbn_number.split('-');",
+							"console.log(isbn_number_splited)",
+							"",
+							"pm.test(\"Check ISBN13 request length is 13\", function () {",
+							"    pm.expect(isbn_number_joined.length).to.eql(13);",
+							"});",
+							"",
+							"pm.test(\"Check ISBN13 number starts with 978 or 979\", function () {",
+							"    pm.expect(isbn_number_splited[0]).to.be.oneOf(['978','979']);",
+							"});",
+							"",
+							"pm.test(\"Check ISBN13 number in request has 5 parts\", function () {",
+							"    pm.expect(isbn_number_splited.length).to.eql(5);",
+							"});",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "text/xml; charset=utf-8"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n  <soap:Body>\n    <IsValidISBN13 xmlns=\"http://webservices.daehosting.com/ISBN\">\n      <sISBN>{{ISBN13_number}}</sISBN>\n    </IsValidISBN13>\n  </soap:Body>\n</soap:Envelope>"
+				},
+				"url": {
+					"raw": "{{base_url}}/services/isbnservice.wso",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"services",
+						"isbnservice.wso"
+					]
+				},
+				"description": "The test is done by calculation on the first 12 digits and compare the result with the checksum number at the end. You have to pass a 13 digits number."
+			},
+			"response": []
+		},
+		{
+			"name": "Is Valid ISBN10 Number",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"",
+							"const $ = cheerio.load(pm.response.text(),{",
+							"    xmlMode: true",
+							"});",
+							"const res = $('m\\\\:IsValidISBN10Result').text()",
+							"console.log(res)",
+							"",
+							"pm.test(\"Response body contains element\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"<m:IsValidISBN10Result>\");",
+							"});",
+							"",
+							"pm.test(\"Response body contains expected value\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"<m:IsValidISBN10Result>true</m:IsValidISBN10Result>\");",
+							"});",
+							"",
+							"pm.test(\"Check ISBN10 is true\", function () {",
+							"    pm.expect(res).to.eql('true');",
+							"});",
+							"",
+							"",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"// Довжина: ISBN-10 має 10 цифр, ISBN-13 — 13.",
+							"// Префікс: ISBN-13 завжди починається з префіксів 978 або 979, що вказує на те, що це книга, чого немає в ISBN-10.",
+							"// Структура: ISBN-13 складається з п'яти частин (включаючи префікс 3 цифри), а ISBN-10 — з чотирьох.",
+							"",
+							"let isbn_number = pm.collectionVariables.get(\"ISBN10_number\");",
+							"let isbn_number_joined = isbn_number.split('-').join('');",
+							"let isbn_number_splited = isbn_number.split('-');",
+							"console.log(isbn_number)",
+							"",
+							"pm.test(\"Check ISBN10 request length is 10\", function () {",
+							"    pm.expect(isbn_number_joined.length).to.eql(10);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Check ISBN10 number doesn't start with 978 or 979 like in ISBN13\", function () {",
+							"    pm.expect(isbn_number_splited[0]).not.to.be.oneOf(['978','979']);",
+							"});",
+							"",
+							"pm.test(\"Check ISBN10 number in request has 4 parts\", function () {",
+							"    pm.expect(isbn_number_splited.length).to.eql(4);",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "text/xml; charset=utf-8"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n  <soap:Body>\n    <IsValidISBN10 xmlns=\"http://webservices.daehosting.com/ISBN\">\n      <sISBN>{{ISBN10_number}}</sISBN>\n    </IsValidISBN10>\n  </soap:Body>\n</soap:Envelope>"
+				},
+				"url": {
+					"raw": "{{base_url}}/services/isbnservice.wso",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"services",
+						"isbnservice.wso"
+					]
+				},
+				"description": "The test is done by calculation on the first 9 digits and compare the result with the checksum number at the end. You have to pass a 10 digits number or 8 digits and an X."
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					"let test_name = pm.info.requestName;",
+					"",
+					"pm.test(`Status code is 200 in test \"${test_name}\"`, function () {",
+					"    pm.response.to.have.status(200);",
+					"});",
+					"",
+					"pm.test(\"Content-Type is present\", function () {",
+					"    pm.response.to.have.header(\"Content-Type\");",
+					"});",
+					"",
+					"pm.test(`Content-type is text/xml in test \"${test_name}\"`, function () {",
+					"    let headerContentType = pm.response.headers.get('Content-type');",
+					"    pm.expect(headerContentType).include('text/xml')",
+					"});",
+					"",
+					"pm.test(`Charset is utf-8 in test ${test_name}`, function () {",
+					"    let headerContentType = pm.response.headers.get('Content-type');",
+					"    pm.expect(headerContentType).include('charset=utf-8')",
+					"});",
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://webservices.daehosting.com/",
+			"type": "string"
+		},
+		{
+			"key": "ISBN13_number",
+			"value": "978-617-95336-9-3"
+		},
+		{
+			"key": "ISBN10_number",
+			"value": "0-552-12055-3"
+		}
+	]
+}
