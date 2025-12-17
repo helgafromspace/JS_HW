@@ -222,7 +222,7 @@
 					"    pm.expect(headerContentType).include('text/xml')",
 					"});",
 					"",
-					"pm.test(`Charset is utf-8 in test ${test_name}`, function () {",
+					"pm.test(`Charset is utf-8 in test \"${test_name}\"`, function () {",
 					"    let headerContentType = pm.response.headers.get('Content-type');",
 					"    pm.expect(headerContentType).include('charset=utf-8')",
 					"});",
