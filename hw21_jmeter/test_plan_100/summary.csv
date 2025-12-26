@@ -1,0 +1,501 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1766782704337,35,Get all heros,200,OK,Thread Group 1-4,text,true,,110127,127,11,11,http://localhost:3001/characters,31,0,16
+1766782704343,28,Get all heros,200,OK,Thread Group 1-9,text,true,,110127,127,11,11,http://localhost:3001/characters,24,0,9
+1766782704337,35,Get all heros,200,OK,Thread Group 1-1,text,true,,110127,127,11,11,http://localhost:3001/characters,31,0,16
+1766782704337,35,Get all heros,200,OK,Thread Group 1-3,text,true,,110127,127,11,11,http://localhost:3001/characters,31,0,16
+1766782704336,35,Get all heros,200,OK,Thread Group 1-8,text,true,,110127,127,11,11,http://localhost:3001/characters,35,0,16
+1766782704337,35,Get all heros,200,OK,Thread Group 1-2,text,true,,110127,127,11,11,http://localhost:3001/characters,33,0,16
+1766782704337,38,Get all heros,200,OK,Thread Group 1-5,text,true,,110127,127,12,12,http://localhost:3001/characters,37,0,16
+1766782704336,39,Get all heros,200,OK,Thread Group 1-6,text,true,,110127,127,12,12,http://localhost:3001/characters,38,0,16
+1766782704373,2,Get hero by id,200,OK,Thread Group 1-3,text,true,,271,129,12,12,http://localhost:3001/character/24,2,0,0
+1766782704373,2,Get hero by id,200,OK,Thread Group 1-2,text,true,,271,129,12,12,http://localhost:3001/character/24,2,0,0
+1766782704373,3,Get hero by id,200,OK,Thread Group 1-8,text,true,,271,129,12,12,http://localhost:3001/character/24,3,0,0
+1766782704373,3,Get hero by id,200,OK,Thread Group 1-4,text,true,,271,129,12,12,http://localhost:3001/character/24,3,0,0
+1766782704373,4,Get hero by id,200,OK,Thread Group 1-9,text,true,,271,129,12,12,http://localhost:3001/character/24,4,0,0
+1766782704373,4,Get hero by id,200,OK,Thread Group 1-1,text,true,,271,129,12,12,http://localhost:3001/character/24,4,0,0
+1766782704375,4,Get hero by id,200,OK,Thread Group 1-5,text,true,,271,129,12,12,http://localhost:3001/character/24,4,0,0
+1766782704336,44,Get all heros,200,OK,Thread Group 1-7,text,true,,110127,127,12,12,http://localhost:3001/characters,43,0,16
+1766782704375,5,Get hero by id,200,OK,Thread Group 1-6,text,true,,271,129,12,12,http://localhost:3001/character/24,5,0,0
+1766782704353,29,Get all heros,200,OK,Thread Group 1-10,text,true,,110127,127,12,12,http://localhost:3001/characters,29,0,0
+1766782704380,7,Get hero by id,200,OK,Thread Group 1-7,text,true,,271,129,13,13,http://localhost:3001/character/24,7,0,0
+1766782704383,5,Get hero by id,200,OK,Thread Group 1-10,text,true,,271,129,13,13,http://localhost:3001/character/24,5,0,0
+1766782704363,27,Get all heros,200,OK,Thread Group 1-11,text,true,,110439,127,13,13,http://localhost:3001/characters,24,0,1
+1766782704373,18,Get all heros,200,OK,Thread Group 1-12,text,true,,110439,127,13,13,http://localhost:3001/characters,18,0,0
+1766782704392,2,Get hero by id,200,OK,Thread Group 1-12,text,true,,271,129,14,14,http://localhost:3001/character/24,2,0,0
+1766782704383,11,Get all heros,200,OK,Thread Group 1-13,text,true,,110478,127,14,14,http://localhost:3001/characters,9,0,1
+1766782704390,4,Get hero by id,200,OK,Thread Group 1-11,text,true,,271,129,14,14,http://localhost:3001/character/24,4,0,0
+1766782704394,2,Get hero by id,200,OK,Thread Group 1-13,text,true,,271,129,14,14,http://localhost:3001/character/24,2,0,0
+1766782704393,8,Get all heros,200,OK,Thread Group 1-14,text,true,,110595,127,14,14,http://localhost:3001/characters,5,0,1
+1766782704402,1,Get hero by id,200,OK,Thread Group 1-14,text,true,,271,129,15,15,http://localhost:3001/character/24,1,0,0
+1766782704403,4,Get all heros,200,OK,Thread Group 1-15,text,true,,110634,127,15,15,http://localhost:3001/characters,3,0,0
+1766782704407,1,Get hero by id,200,OK,Thread Group 1-15,text,true,,271,129,15,15,http://localhost:3001/character/24,1,0,0
+1766782704404,3,Create hero,201,Created,Thread Group 1-14,text,true,,278,231,15,15,http://localhost:3001/character,3,0,0
+1766782704396,5,Create hero,201,Created,Thread Group 1-13,text,true,,278,231,14,14,http://localhost:3001/character,5,0,0
+1766782704387,4,Create hero,201,Created,Thread Group 1-7,text,true,,278,231,13,13,http://localhost:3001/character,4,0,0
+1766782704409,2,Create hero,201,Created,Thread Group 1-15,text,true,,278,231,15,15,http://localhost:3001/character,2,0,0
+1766782704376,10,Create hero,201,Created,Thread Group 1-8,text,true,,278,231,13,13,http://localhost:3001/character,10,0,0
+1766782704377,9,Create hero,201,Created,Thread Group 1-9,text,true,,278,231,13,13,http://localhost:3001/character,9,0,0
+1766782704388,5,Create hero,201,Created,Thread Group 1-10,text,true,,278,231,14,14,http://localhost:3001/character,5,0,0
+1766782704376,9,Create hero,201,Created,Thread Group 1-2,text,true,,278,231,13,13,http://localhost:3001/character,9,0,0
+1766782704377,8,Create hero,201,Created,Thread Group 1-1,text,true,,278,231,13,13,http://localhost:3001/character,8,0,0
+1766782704394,3,Create hero,201,Created,Thread Group 1-11,text,true,,278,231,14,14,http://localhost:3001/character,3,0,0
+1766782704376,9,Create hero,201,Created,Thread Group 1-4,text,true,,278,231,13,13,http://localhost:3001/character,9,0,0
+1766782704394,3,Create hero,201,Created,Thread Group 1-12,text,true,,278,231,14,14,http://localhost:3001/character,3,0,0
+1766782704380,6,Create hero,201,Created,Thread Group 1-6,text,true,,278,231,13,13,http://localhost:3001/character,6,0,0
+1766782704413,3,Change hero,200,OK,Thread Group 1-7,text,true,,273,235,16,16,http://localhost:3001/character/2855,3,0,0
+1766782704413,3,Change hero,200,OK,Thread Group 1-10,text,true,,273,235,16,16,http://localhost:3001/character/2856,3,0,0
+1766782704375,10,Create hero,201,Created,Thread Group 1-3,text,true,,278,231,13,13,http://localhost:3001/character,10,0,0
+1766782704380,3,Create hero,201,Created,Thread Group 1-5,text,true,,278,231,13,13,http://localhost:3001/character,3,0,0
+1766782704413,5,Change hero,200,OK,Thread Group 1-9,text,true,,273,235,16,16,http://localhost:3001/character/2851,5,0,0
+1766782704413,6,Change hero,200,OK,Thread Group 1-13,text,true,,273,235,16,16,http://localhost:3001/character/2859,6,0,0
+1766782704413,7,Change hero,200,OK,Thread Group 1-15,text,true,,273,235,16,16,http://localhost:3001/character/2861,7,0,0
+1766782704413,7,Change hero,200,OK,Thread Group 1-8,text,true,,273,235,16,16,http://localhost:3001/character/2852,7,0,0
+1766782704413,8,Change hero,200,OK,Thread Group 1-2,text,true,,273,235,16,16,http://localhost:3001/character/2854,8,0,0
+1766782704414,7,Change hero,200,OK,Thread Group 1-14,text,true,,273,235,16,16,http://localhost:3001/character/2860,7,0,0
+1766782704417,5,Delete hero,200,OK,Thread Group 1-10,text,true,,293,217,16,16,http://localhost:3001/character/2856,5,0,0
+1766782704418,5,Delete hero,200,OK,Thread Group 1-9,text,true,,293,217,16,16,http://localhost:3001/character/2851,5,0,0
+1766782704419,5,Delete hero,200,OK,Thread Group 1-13,text,true,,293,217,15,15,http://localhost:3001/character/2859,5,0,0
+1766782704420,5,Delete hero,200,OK,Thread Group 1-15,text,true,,293,217,14,14,http://localhost:3001/character/2861,5,0,0
+1766782704421,5,Delete hero,200,OK,Thread Group 1-8,text,true,,293,217,13,13,http://localhost:3001/character/2852,5,0,0
+1766782704414,13,Change hero,200,OK,Thread Group 1-1,text,true,,273,235,12,12,http://localhost:3001/character/2849,13,0,0
+1766782704415,12,Change hero,200,OK,Thread Group 1-12,text,true,,273,235,12,12,http://localhost:3001/character/2857,12,0,0
+1766782704415,13,Change hero,200,OK,Thread Group 1-4,text,true,,273,235,12,12,http://localhost:3001/character/2850,13,0,0
+1766782704414,14,Change hero,200,OK,Thread Group 1-11,text,true,,273,235,12,12,http://localhost:3001/character/2858,14,0,0
+1766782704416,13,Change hero,200,OK,Thread Group 1-6,text,true,,273,235,12,12,http://localhost:3001/character/2848,13,0,0
+1766782704416,13,Delete hero,200,OK,Thread Group 1-7,text,true,,293,217,12,12,http://localhost:3001/character/2855,13,0,0
+1766782704417,13,Change hero,200,OK,Thread Group 1-3,text,true,,273,235,11,11,http://localhost:3001/character/2853,13,0,0
+1766782704417,14,Change hero,200,OK,Thread Group 1-5,text,true,,273,235,11,11,http://localhost:3001/character/2847,14,0,0
+1766782704427,6,Delete hero,200,OK,Thread Group 1-1,text,true,,293,217,12,12,http://localhost:3001/character/2849,6,0,0
+1766782704412,22,Get all heros,200,OK,Thread Group 1-16,text,true,,110478,127,12,12,http://localhost:3001/characters,20,0,1
+1766782704428,6,Delete hero,200,OK,Thread Group 1-12,text,true,,293,217,11,11,http://localhost:3001/character/2857,6,0,0
+1766782704428,7,Delete hero,200,OK,Thread Group 1-4,text,true,,293,217,11,11,http://localhost:3001/character/2850,7,0,0
+1766782704428,8,Delete hero,200,OK,Thread Group 1-11,text,true,,293,217,9,9,http://localhost:3001/character/2858,8,0,0
+1766782704429,7,Delete hero,200,OK,Thread Group 1-6,text,true,,293,217,9,9,http://localhost:3001/character/2848,7,0,0
+1766782704430,7,Delete hero,200,OK,Thread Group 1-3,text,true,,293,217,7,7,http://localhost:3001/character/2853,7,0,0
+1766782704431,7,Delete hero,200,OK,Thread Group 1-5,text,true,,293,217,6,6,http://localhost:3001/character/2847,7,0,0
+1766782704421,17,Delete hero,200,OK,Thread Group 1-2,text,true,,293,217,6,6,http://localhost:3001/character/2854,17,0,0
+1766782704422,17,Delete hero,200,OK,Thread Group 1-14,text,true,,293,217,4,4,http://localhost:3001/character/2860,17,0,0
+1766782704434,6,Get hero by id,200,OK,Thread Group 1-16,text,true,,271,129,3,3,http://localhost:3001/character/24,6,0,0
+1766782704423,19,Get all heros,200,OK,Thread Group 1-17,text,true,,110127,127,3,3,http://localhost:3001/characters,18,0,1
+1766782704440,3,Create hero,201,Created,Thread Group 1-16,text,true,,278,231,4,4,http://localhost:3001/character,3,0,0
+1766782704443,2,Get hero by id,200,OK,Thread Group 1-17,text,true,,271,129,4,4,http://localhost:3001/character/24,2,0,0
+1766782704432,14,Get all heros,200,OK,Thread Group 1-18,text,true,,110166,127,4,4,http://localhost:3001/characters,13,0,1
+1766782704443,3,Change hero,200,OK,Thread Group 1-16,text,true,,273,235,4,4,http://localhost:3001/character/2847,3,0,0
+1766782704443,5,Get all heros,200,OK,Thread Group 1-19,text,true,,110166,127,4,4,http://localhost:3001/characters,5,0,1
+1766782704445,3,Create hero,201,Created,Thread Group 1-17,text,true,,278,231,4,4,http://localhost:3001/character,3,0,0
+1766782704447,3,Get hero by id,200,OK,Thread Group 1-18,text,true,,271,129,4,4,http://localhost:3001/character/24,2,0,0
+1766782704447,3,Delete hero,200,OK,Thread Group 1-16,text,true,,293,217,4,4,http://localhost:3001/character/2847,3,0,0
+1766782704449,2,Change hero,200,OK,Thread Group 1-17,text,true,,273,235,3,3,http://localhost:3001/character/2848,2,0,0
+1766782704449,2,Get hero by id,200,OK,Thread Group 1-19,text,true,,271,129,3,3,http://localhost:3001/character/24,2,0,0
+1766782704450,2,Create hero,201,Created,Thread Group 1-18,text,true,,278,231,3,3,http://localhost:3001/character,2,0,0
+1766782704451,2,Delete hero,200,OK,Thread Group 1-17,text,true,,293,217,4,4,http://localhost:3001/character/2848,2,0,0
+1766782704451,2,Create hero,201,Created,Thread Group 1-19,text,true,,278,231,4,4,http://localhost:3001/character,2,0,0
+1766782704452,3,Change hero,200,OK,Thread Group 1-18,text,true,,273,235,3,3,http://localhost:3001/character/2848,3,0,0
+1766782704454,2,Change hero,200,OK,Thread Group 1-19,text,true,,273,235,3,3,http://localhost:3001/character/2848,2,0,0
+1766782704455,2,Delete hero,200,OK,Thread Group 1-18,text,true,,293,217,3,3,http://localhost:3001/character/2848,2,0,0
+1766782704453,5,Get all heros,200,OK,Thread Group 1-20,text,true,,110166,127,2,2,http://localhost:3001/characters,5,0,0
+1766782704456,2,Delete hero,200,OK,Thread Group 1-19,text,true,,293,217,2,2,http://localhost:3001/character/2848,2,0,0
+1766782704459,0,Get hero by id,200,OK,Thread Group 1-20,text,true,,271,129,1,1,http://localhost:3001/character/24,0,0,0
+1766782704460,1,Create hero,201,Created,Thread Group 1-20,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782704461,1,Change hero,200,OK,Thread Group 1-20,text,true,,273,235,2,2,http://localhost:3001/character/2847,1,0,0
+1766782704463,1,Delete hero,200,OK,Thread Group 1-20,text,true,,293,217,2,2,http://localhost:3001/character/2847,1,0,0
+1766782704463,3,Get all heros,200,OK,Thread Group 1-21,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,0
+1766782704466,1,Get hero by id,200,OK,Thread Group 1-21,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782704467,1,Create hero,201,Created,Thread Group 1-21,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782704469,1,Change hero,200,OK,Thread Group 1-21,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704470,1,Delete hero,200,OK,Thread Group 1-21,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704472,3,Get all heros,200,OK,Thread Group 1-22,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,1
+1766782704475,1,Get hero by id,200,OK,Thread Group 1-22,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782704476,1,Create hero,201,Created,Thread Group 1-22,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782704477,1,Change hero,200,OK,Thread Group 1-22,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704478,2,Delete hero,200,OK,Thread Group 1-22,text,true,,293,217,1,1,http://localhost:3001/character/2847,2,0,0
+1766782704483,2,Get all heros,200,OK,Thread Group 1-23,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,0
+1766782704485,1,Get hero by id,200,OK,Thread Group 1-23,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782704486,2,Create hero,201,Created,Thread Group 1-23,text,true,,278,231,1,1,http://localhost:3001/character,2,0,0
+1766782704488,1,Change hero,200,OK,Thread Group 1-23,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704489,1,Delete hero,200,OK,Thread Group 1-23,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704492,4,Get all heros,200,OK,Thread Group 1-24,text,true,,110127,127,1,1,http://localhost:3001/characters,3,0,1
+1766782704496,1,Get hero by id,200,OK,Thread Group 1-24,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782704497,1,Create hero,201,Created,Thread Group 1-24,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782704499,1,Change hero,200,OK,Thread Group 1-24,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704500,1,Delete hero,200,OK,Thread Group 1-24,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704503,2,Get all heros,200,OK,Thread Group 1-25,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,0
+1766782704506,1,Get hero by id,200,OK,Thread Group 1-25,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782704507,1,Create hero,201,Created,Thread Group 1-25,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782704508,1,Change hero,200,OK,Thread Group 1-25,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704509,1,Delete hero,200,OK,Thread Group 1-25,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704512,3,Get all heros,200,OK,Thread Group 1-26,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,1
+1766782704515,1,Get hero by id,200,OK,Thread Group 1-26,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782704516,1,Create hero,201,Created,Thread Group 1-26,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782704517,1,Change hero,200,OK,Thread Group 1-26,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704519,1,Delete hero,200,OK,Thread Group 1-26,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704523,2,Get all heros,200,OK,Thread Group 1-27,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,0
+1766782704526,1,Get hero by id,200,OK,Thread Group 1-27,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782704527,1,Create hero,201,Created,Thread Group 1-27,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782704528,1,Change hero,200,OK,Thread Group 1-27,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704529,1,Delete hero,200,OK,Thread Group 1-27,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704532,3,Get all heros,200,OK,Thread Group 1-28,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,0
+1766782704535,1,Get hero by id,200,OK,Thread Group 1-28,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782704536,1,Create hero,201,Created,Thread Group 1-28,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782704537,1,Change hero,200,OK,Thread Group 1-28,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704538,1,Delete hero,200,OK,Thread Group 1-28,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704543,2,Get all heros,200,OK,Thread Group 1-29,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,0
+1766782704545,1,Get hero by id,200,OK,Thread Group 1-29,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782704546,1,Create hero,201,Created,Thread Group 1-29,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782704548,1,Change hero,200,OK,Thread Group 1-29,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704549,1,Delete hero,200,OK,Thread Group 1-29,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704552,3,Get all heros,200,OK,Thread Group 1-30,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,0
+1766782704555,1,Get hero by id,200,OK,Thread Group 1-30,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782704556,1,Create hero,201,Created,Thread Group 1-30,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782704557,1,Change hero,200,OK,Thread Group 1-30,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704558,1,Delete hero,200,OK,Thread Group 1-30,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704562,3,Get all heros,200,OK,Thread Group 1-31,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,1
+1766782704565,1,Get hero by id,200,OK,Thread Group 1-31,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782704566,1,Create hero,201,Created,Thread Group 1-31,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782704567,1,Change hero,200,OK,Thread Group 1-31,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704568,1,Delete hero,200,OK,Thread Group 1-31,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704572,3,Get all heros,200,OK,Thread Group 1-32,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,1
+1766782704575,1,Get hero by id,200,OK,Thread Group 1-32,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782704576,1,Create hero,201,Created,Thread Group 1-32,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782704577,2,Change hero,200,OK,Thread Group 1-32,text,true,,273,235,1,1,http://localhost:3001/character/2847,2,0,0
+1766782704579,1,Delete hero,200,OK,Thread Group 1-32,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704583,3,Get all heros,200,OK,Thread Group 1-33,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,0
+1766782704586,1,Get hero by id,200,OK,Thread Group 1-33,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782704587,2,Create hero,201,Created,Thread Group 1-33,text,true,,278,231,1,1,http://localhost:3001/character,2,0,0
+1766782704589,1,Change hero,200,OK,Thread Group 1-33,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704591,1,Delete hero,200,OK,Thread Group 1-33,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704592,3,Get all heros,200,OK,Thread Group 1-34,text,true,,110127,127,1,1,http://localhost:3001/characters,3,0,1
+1766782704595,1,Get hero by id,200,OK,Thread Group 1-34,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782704596,1,Create hero,201,Created,Thread Group 1-34,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782704597,1,Change hero,200,OK,Thread Group 1-34,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704598,1,Delete hero,200,OK,Thread Group 1-34,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704602,2,Get all heros,200,OK,Thread Group 1-35,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,0
+1766782704605,0,Get hero by id,200,OK,Thread Group 1-35,text,true,,271,129,1,1,http://localhost:3001/character/24,0,0,0
+1766782704606,1,Create hero,201,Created,Thread Group 1-35,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782704607,1,Change hero,200,OK,Thread Group 1-35,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704608,1,Delete hero,200,OK,Thread Group 1-35,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704612,3,Get all heros,200,OK,Thread Group 1-36,text,true,,110127,127,1,1,http://localhost:3001/characters,3,0,1
+1766782704615,1,Get hero by id,200,OK,Thread Group 1-36,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782704616,1,Create hero,201,Created,Thread Group 1-36,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782704618,1,Change hero,200,OK,Thread Group 1-36,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704619,1,Delete hero,200,OK,Thread Group 1-36,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704622,2,Get all heros,200,OK,Thread Group 1-37,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,0
+1766782704624,1,Get hero by id,200,OK,Thread Group 1-37,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782704625,1,Create hero,201,Created,Thread Group 1-37,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782704626,1,Change hero,200,OK,Thread Group 1-37,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704628,0,Delete hero,200,OK,Thread Group 1-37,text,true,,293,217,1,1,http://localhost:3001/character/2847,0,0,0
+1766782704632,3,Get all heros,200,OK,Thread Group 1-38,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,1
+1766782704635,1,Get hero by id,200,OK,Thread Group 1-38,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782704636,1,Create hero,201,Created,Thread Group 1-38,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782704637,1,Change hero,200,OK,Thread Group 1-38,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704639,1,Delete hero,200,OK,Thread Group 1-38,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704642,2,Get all heros,200,OK,Thread Group 1-39,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,0
+1766782704644,1,Get hero by id,200,OK,Thread Group 1-39,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782704645,1,Create hero,201,Created,Thread Group 1-39,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782704647,1,Change hero,200,OK,Thread Group 1-39,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704648,1,Delete hero,200,OK,Thread Group 1-39,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704652,3,Get all heros,200,OK,Thread Group 1-40,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,0
+1766782704655,1,Get hero by id,200,OK,Thread Group 1-40,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782704656,1,Create hero,201,Created,Thread Group 1-40,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782704657,1,Change hero,200,OK,Thread Group 1-40,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704659,0,Delete hero,200,OK,Thread Group 1-40,text,true,,293,217,1,1,http://localhost:3001/character/2847,0,0,0
+1766782704663,2,Get all heros,200,OK,Thread Group 1-41,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,0
+1766782704665,1,Get hero by id,200,OK,Thread Group 1-41,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782704666,1,Create hero,201,Created,Thread Group 1-41,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782704667,1,Change hero,200,OK,Thread Group 1-41,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704669,0,Delete hero,200,OK,Thread Group 1-41,text,true,,293,217,1,1,http://localhost:3001/character/2847,0,0,0
+1766782704672,3,Get all heros,200,OK,Thread Group 1-42,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,0
+1766782704675,1,Get hero by id,200,OK,Thread Group 1-42,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782704676,1,Create hero,201,Created,Thread Group 1-42,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782704677,1,Change hero,200,OK,Thread Group 1-42,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704678,1,Delete hero,200,OK,Thread Group 1-42,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704682,3,Get all heros,200,OK,Thread Group 1-43,text,true,,110127,127,1,1,http://localhost:3001/characters,3,0,1
+1766782704685,1,Get hero by id,200,OK,Thread Group 1-43,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782704686,1,Create hero,201,Created,Thread Group 1-43,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782704688,1,Change hero,200,OK,Thread Group 1-43,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704689,1,Delete hero,200,OK,Thread Group 1-43,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704692,2,Get all heros,200,OK,Thread Group 1-44,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,0
+1766782704695,0,Get hero by id,200,OK,Thread Group 1-44,text,true,,271,129,1,1,http://localhost:3001/character/24,0,0,0
+1766782704696,1,Create hero,201,Created,Thread Group 1-44,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782704697,1,Change hero,200,OK,Thread Group 1-44,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704698,1,Delete hero,200,OK,Thread Group 1-44,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704702,3,Get all heros,200,OK,Thread Group 1-45,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,0
+1766782704705,1,Get hero by id,200,OK,Thread Group 1-45,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782704706,1,Create hero,201,Created,Thread Group 1-45,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782704708,1,Change hero,200,OK,Thread Group 1-45,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704710,1,Delete hero,200,OK,Thread Group 1-45,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704712,2,Get all heros,200,OK,Thread Group 1-46,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,0
+1766782704714,1,Get hero by id,200,OK,Thread Group 1-46,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782704715,1,Create hero,201,Created,Thread Group 1-46,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782704717,1,Change hero,200,OK,Thread Group 1-46,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704718,1,Delete hero,200,OK,Thread Group 1-46,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704722,3,Get all heros,200,OK,Thread Group 1-47,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,0
+1766782704725,1,Get hero by id,200,OK,Thread Group 1-47,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782704726,1,Create hero,201,Created,Thread Group 1-47,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782704727,1,Change hero,200,OK,Thread Group 1-47,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704729,1,Delete hero,200,OK,Thread Group 1-47,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704732,3,Get all heros,200,OK,Thread Group 1-48,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,1
+1766782704735,1,Get hero by id,200,OK,Thread Group 1-48,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782704736,1,Create hero,201,Created,Thread Group 1-48,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782704737,1,Change hero,200,OK,Thread Group 1-48,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704739,0,Delete hero,200,OK,Thread Group 1-48,text,true,,293,217,1,1,http://localhost:3001/character/2847,0,0,0
+1766782704741,3,Get all heros,200,OK,Thread Group 1-49,text,true,,110127,127,1,1,http://localhost:3001/characters,3,0,1
+1766782704744,1,Get hero by id,200,OK,Thread Group 1-49,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782704745,1,Create hero,201,Created,Thread Group 1-49,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782704747,1,Change hero,200,OK,Thread Group 1-49,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704748,1,Delete hero,200,OK,Thread Group 1-49,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704752,2,Get all heros,200,OK,Thread Group 1-50,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,0
+1766782704755,0,Get hero by id,200,OK,Thread Group 1-50,text,true,,271,129,1,1,http://localhost:3001/character/24,0,0,0
+1766782704756,1,Create hero,201,Created,Thread Group 1-50,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782704757,1,Change hero,200,OK,Thread Group 1-50,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704758,1,Delete hero,200,OK,Thread Group 1-50,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704762,3,Get all heros,200,OK,Thread Group 1-51,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,0
+1766782704765,0,Get hero by id,200,OK,Thread Group 1-51,text,true,,271,129,1,1,http://localhost:3001/character/24,0,0,0
+1766782704766,0,Create hero,201,Created,Thread Group 1-51,text,true,,278,231,1,1,http://localhost:3001/character,0,0,0
+1766782704767,1,Change hero,200,OK,Thread Group 1-51,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704768,1,Delete hero,200,OK,Thread Group 1-51,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704772,2,Get all heros,200,OK,Thread Group 1-52,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,0
+1766782704775,1,Get hero by id,200,OK,Thread Group 1-52,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782704776,1,Create hero,201,Created,Thread Group 1-52,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782704777,1,Change hero,200,OK,Thread Group 1-52,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704779,1,Delete hero,200,OK,Thread Group 1-52,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704783,2,Get all heros,200,OK,Thread Group 1-53,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,0
+1766782704786,1,Get hero by id,200,OK,Thread Group 1-53,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782704787,1,Create hero,201,Created,Thread Group 1-53,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782704788,1,Change hero,200,OK,Thread Group 1-53,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704790,1,Delete hero,200,OK,Thread Group 1-53,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704792,3,Get all heros,200,OK,Thread Group 1-54,text,true,,110127,127,1,1,http://localhost:3001/characters,3,0,1
+1766782704795,1,Get hero by id,200,OK,Thread Group 1-54,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782704796,1,Create hero,201,Created,Thread Group 1-54,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782704798,1,Change hero,200,OK,Thread Group 1-54,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704799,0,Delete hero,200,OK,Thread Group 1-54,text,true,,293,217,1,1,http://localhost:3001/character/2847,0,0,0
+1766782704804,2,Get all heros,200,OK,Thread Group 1-55,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,0
+1766782704806,1,Get hero by id,200,OK,Thread Group 1-55,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782704807,1,Create hero,201,Created,Thread Group 1-55,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782704809,1,Change hero,200,OK,Thread Group 1-55,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704810,1,Delete hero,200,OK,Thread Group 1-55,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704812,3,Get all heros,200,OK,Thread Group 1-56,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,0
+1766782704815,1,Get hero by id,200,OK,Thread Group 1-56,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782704816,1,Create hero,201,Created,Thread Group 1-56,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782704817,1,Change hero,200,OK,Thread Group 1-56,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704818,1,Delete hero,200,OK,Thread Group 1-56,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704822,3,Get all heros,200,OK,Thread Group 1-57,text,true,,110127,127,1,1,http://localhost:3001/characters,3,0,1
+1766782704825,1,Get hero by id,200,OK,Thread Group 1-57,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782704826,1,Create hero,201,Created,Thread Group 1-57,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782704827,1,Change hero,200,OK,Thread Group 1-57,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704828,1,Delete hero,200,OK,Thread Group 1-57,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704833,2,Get all heros,200,OK,Thread Group 1-58,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,0
+1766782704835,1,Get hero by id,200,OK,Thread Group 1-58,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782704836,1,Create hero,201,Created,Thread Group 1-58,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782704837,1,Change hero,200,OK,Thread Group 1-58,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704838,0,Delete hero,200,OK,Thread Group 1-58,text,true,,293,217,1,1,http://localhost:3001/character/2847,0,0,0
+1766782704842,3,Get all heros,200,OK,Thread Group 1-59,text,true,,110127,127,1,1,http://localhost:3001/characters,3,0,1
+1766782704845,1,Get hero by id,200,OK,Thread Group 1-59,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782704846,1,Create hero,201,Created,Thread Group 1-59,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782704847,1,Change hero,200,OK,Thread Group 1-59,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704848,1,Delete hero,200,OK,Thread Group 1-59,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704852,3,Get all heros,200,OK,Thread Group 1-60,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,0
+1766782704855,1,Get hero by id,200,OK,Thread Group 1-60,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782704856,1,Create hero,201,Created,Thread Group 1-60,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782704857,1,Change hero,200,OK,Thread Group 1-60,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704858,1,Delete hero,200,OK,Thread Group 1-60,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704863,2,Get all heros,200,OK,Thread Group 1-61,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,0
+1766782704865,1,Get hero by id,200,OK,Thread Group 1-61,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782704866,1,Create hero,201,Created,Thread Group 1-61,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782704867,1,Change hero,200,OK,Thread Group 1-61,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704868,1,Delete hero,200,OK,Thread Group 1-61,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704872,2,Get all heros,200,OK,Thread Group 1-62,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,0
+1766782704874,1,Get hero by id,200,OK,Thread Group 1-62,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782704875,1,Create hero,201,Created,Thread Group 1-62,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782704876,1,Change hero,200,OK,Thread Group 1-62,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704877,1,Delete hero,200,OK,Thread Group 1-62,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704882,2,Get all heros,200,OK,Thread Group 1-63,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,0
+1766782704885,1,Get hero by id,200,OK,Thread Group 1-63,text,true,,271,129,1,1,http://localhost:3001/character/24,0,0,0
+1766782704886,1,Create hero,201,Created,Thread Group 1-63,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782704887,1,Change hero,200,OK,Thread Group 1-63,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704888,1,Delete hero,200,OK,Thread Group 1-63,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704892,3,Get all heros,200,OK,Thread Group 1-64,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,1
+1766782704895,1,Get hero by id,200,OK,Thread Group 1-64,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782704896,1,Create hero,201,Created,Thread Group 1-64,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782704897,1,Change hero,200,OK,Thread Group 1-64,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704898,1,Delete hero,200,OK,Thread Group 1-64,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704902,2,Get all heros,200,OK,Thread Group 1-65,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,0
+1766782704904,1,Get hero by id,200,OK,Thread Group 1-65,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782704905,1,Create hero,201,Created,Thread Group 1-65,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782704907,1,Change hero,200,OK,Thread Group 1-65,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704908,1,Delete hero,200,OK,Thread Group 1-65,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704912,2,Get all heros,200,OK,Thread Group 1-66,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,0
+1766782704914,1,Get hero by id,200,OK,Thread Group 1-66,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782704915,1,Create hero,201,Created,Thread Group 1-66,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782704916,1,Change hero,200,OK,Thread Group 1-66,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704917,1,Delete hero,200,OK,Thread Group 1-66,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704922,3,Get all heros,200,OK,Thread Group 1-67,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,1
+1766782704925,1,Get hero by id,200,OK,Thread Group 1-67,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782704926,1,Create hero,201,Created,Thread Group 1-67,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782704927,1,Change hero,200,OK,Thread Group 1-67,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704928,0,Delete hero,200,OK,Thread Group 1-67,text,true,,293,217,1,1,http://localhost:3001/character/2847,0,0,0
+1766782704932,2,Get all heros,200,OK,Thread Group 1-68,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,0
+1766782704934,1,Get hero by id,200,OK,Thread Group 1-68,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782704935,1,Create hero,201,Created,Thread Group 1-68,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782704937,0,Change hero,200,OK,Thread Group 1-68,text,true,,273,235,1,1,http://localhost:3001/character/2847,0,0,0
+1766782704938,0,Delete hero,200,OK,Thread Group 1-68,text,true,,293,217,1,1,http://localhost:3001/character/2847,0,0,0
+1766782704942,2,Get all heros,200,OK,Thread Group 1-69,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,0
+1766782704944,1,Get hero by id,200,OK,Thread Group 1-69,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782704945,1,Create hero,201,Created,Thread Group 1-69,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782704946,1,Change hero,200,OK,Thread Group 1-69,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704947,1,Delete hero,200,OK,Thread Group 1-69,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704952,2,Get all heros,200,OK,Thread Group 1-70,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,0
+1766782704955,0,Get hero by id,200,OK,Thread Group 1-70,text,true,,271,129,1,1,http://localhost:3001/character/24,0,0,0
+1766782704956,1,Create hero,201,Created,Thread Group 1-70,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782704957,1,Change hero,200,OK,Thread Group 1-70,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704958,0,Delete hero,200,OK,Thread Group 1-70,text,true,,293,217,1,1,http://localhost:3001/character/2847,0,0,0
+1766782704961,3,Get all heros,200,OK,Thread Group 1-71,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,1
+1766782704964,0,Get hero by id,200,OK,Thread Group 1-71,text,true,,271,129,1,1,http://localhost:3001/character/24,0,0,0
+1766782704964,1,Create hero,201,Created,Thread Group 1-71,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782704965,1,Change hero,200,OK,Thread Group 1-71,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704966,1,Delete hero,200,OK,Thread Group 1-71,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704972,2,Get all heros,200,OK,Thread Group 1-72,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,0
+1766782704975,1,Get hero by id,200,OK,Thread Group 1-72,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782704976,1,Create hero,201,Created,Thread Group 1-72,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782704977,1,Change hero,200,OK,Thread Group 1-72,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704978,1,Delete hero,200,OK,Thread Group 1-72,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704982,2,Get all heros,200,OK,Thread Group 1-73,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,0
+1766782704985,0,Get hero by id,200,OK,Thread Group 1-73,text,true,,271,129,1,1,http://localhost:3001/character/24,0,0,0
+1766782704985,1,Create hero,201,Created,Thread Group 1-73,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782704986,1,Change hero,200,OK,Thread Group 1-73,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704987,1,Delete hero,200,OK,Thread Group 1-73,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704992,3,Get all heros,200,OK,Thread Group 1-74,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,1
+1766782704995,1,Get hero by id,200,OK,Thread Group 1-74,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782704996,1,Create hero,201,Created,Thread Group 1-74,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782704997,1,Change hero,200,OK,Thread Group 1-74,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782704998,1,Delete hero,200,OK,Thread Group 1-74,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782705002,2,Get all heros,200,OK,Thread Group 1-75,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,0
+1766782705004,1,Get hero by id,200,OK,Thread Group 1-75,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782705005,0,Create hero,201,Created,Thread Group 1-75,text,true,,278,231,1,1,http://localhost:3001/character,0,0,0
+1766782705006,1,Change hero,200,OK,Thread Group 1-75,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782705007,0,Delete hero,200,OK,Thread Group 1-75,text,true,,293,217,1,1,http://localhost:3001/character/2847,0,0,0
+1766782705012,3,Get all heros,200,OK,Thread Group 1-76,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,0
+1766782705015,1,Get hero by id,200,OK,Thread Group 1-76,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782705016,1,Create hero,201,Created,Thread Group 1-76,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782705017,1,Change hero,200,OK,Thread Group 1-76,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782705018,0,Delete hero,200,OK,Thread Group 1-76,text,true,,293,217,1,1,http://localhost:3001/character/2847,0,0,0
+1766782705022,2,Get all heros,200,OK,Thread Group 1-77,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,0
+1766782705025,0,Get hero by id,200,OK,Thread Group 1-77,text,true,,271,129,1,1,http://localhost:3001/character/24,0,0,0
+1766782705025,1,Create hero,201,Created,Thread Group 1-77,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782705027,0,Change hero,200,OK,Thread Group 1-77,text,true,,273,235,1,1,http://localhost:3001/character/2847,0,0,0
+1766782705028,0,Delete hero,200,OK,Thread Group 1-77,text,true,,293,217,1,1,http://localhost:3001/character/2847,0,0,0
+1766782705032,2,Get all heros,200,OK,Thread Group 1-78,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,0
+1766782705035,1,Get hero by id,200,OK,Thread Group 1-78,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782705036,1,Create hero,201,Created,Thread Group 1-78,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782705038,1,Change hero,200,OK,Thread Group 1-78,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782705039,1,Delete hero,200,OK,Thread Group 1-78,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782705042,2,Get all heros,200,OK,Thread Group 1-79,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,0
+1766782705044,1,Get hero by id,200,OK,Thread Group 1-79,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782705045,1,Create hero,201,Created,Thread Group 1-79,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782705046,1,Change hero,200,OK,Thread Group 1-79,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782705048,0,Delete hero,200,OK,Thread Group 1-79,text,true,,293,217,1,1,http://localhost:3001/character/2847,0,0,0
+1766782705052,3,Get all heros,200,OK,Thread Group 1-80,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,0
+1766782705055,1,Get hero by id,200,OK,Thread Group 1-80,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782705056,1,Create hero,201,Created,Thread Group 1-80,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782705057,1,Change hero,200,OK,Thread Group 1-80,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782705058,1,Delete hero,200,OK,Thread Group 1-80,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782705061,3,Get all heros,200,OK,Thread Group 1-81,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,1
+1766782705064,1,Get hero by id,200,OK,Thread Group 1-81,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782705065,1,Create hero,201,Created,Thread Group 1-81,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782705066,1,Change hero,200,OK,Thread Group 1-81,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782705067,1,Delete hero,200,OK,Thread Group 1-81,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782705072,2,Get all heros,200,OK,Thread Group 1-82,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,0
+1766782705074,1,Get hero by id,200,OK,Thread Group 1-82,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782705075,1,Create hero,201,Created,Thread Group 1-82,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782705076,1,Change hero,200,OK,Thread Group 1-82,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782705077,1,Delete hero,200,OK,Thread Group 1-82,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782705083,2,Get all heros,200,OK,Thread Group 1-83,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,0
+1766782705085,1,Get hero by id,200,OK,Thread Group 1-83,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782705086,1,Create hero,201,Created,Thread Group 1-83,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782705087,1,Change hero,200,OK,Thread Group 1-83,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782705088,1,Delete hero,200,OK,Thread Group 1-83,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782705092,2,Get all heros,200,OK,Thread Group 1-84,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,0
+1766782705095,0,Get hero by id,200,OK,Thread Group 1-84,text,true,,271,129,1,1,http://localhost:3001/character/24,0,0,0
+1766782705095,1,Create hero,201,Created,Thread Group 1-84,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782705097,0,Change hero,200,OK,Thread Group 1-84,text,true,,273,235,1,1,http://localhost:3001/character/2847,0,0,0
+1766782705098,0,Delete hero,200,OK,Thread Group 1-84,text,true,,293,217,1,1,http://localhost:3001/character/2847,0,0,0
+1766782705102,3,Get all heros,200,OK,Thread Group 1-85,text,true,,110127,127,1,1,http://localhost:3001/characters,3,0,1
+1766782705105,1,Get hero by id,200,OK,Thread Group 1-85,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782705106,1,Create hero,201,Created,Thread Group 1-85,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782705107,1,Change hero,200,OK,Thread Group 1-85,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782705108,1,Delete hero,200,OK,Thread Group 1-85,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782705112,4,Get all heros,200,OK,Thread Group 1-86,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,0
+1766782705116,1,Get hero by id,200,OK,Thread Group 1-86,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782705117,1,Create hero,201,Created,Thread Group 1-86,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782705119,1,Change hero,200,OK,Thread Group 1-86,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782705120,1,Delete hero,200,OK,Thread Group 1-86,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782705122,3,Get all heros,200,OK,Thread Group 1-87,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,0
+1766782705125,1,Get hero by id,200,OK,Thread Group 1-87,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782705126,1,Create hero,201,Created,Thread Group 1-87,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782705127,1,Change hero,200,OK,Thread Group 1-87,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782705128,1,Delete hero,200,OK,Thread Group 1-87,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782705132,3,Get all heros,200,OK,Thread Group 1-88,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,1
+1766782705135,1,Get hero by id,200,OK,Thread Group 1-88,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782705136,1,Create hero,201,Created,Thread Group 1-88,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782705137,1,Change hero,200,OK,Thread Group 1-88,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782705138,1,Delete hero,200,OK,Thread Group 1-88,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782705142,2,Get all heros,200,OK,Thread Group 1-89,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,0
+1766782705144,1,Get hero by id,200,OK,Thread Group 1-89,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782705145,1,Create hero,201,Created,Thread Group 1-89,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782705146,1,Change hero,200,OK,Thread Group 1-89,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782705147,1,Delete hero,200,OK,Thread Group 1-89,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782705152,2,Get all heros,200,OK,Thread Group 1-90,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,0
+1766782705154,1,Get hero by id,200,OK,Thread Group 1-90,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782705156,1,Create hero,201,Created,Thread Group 1-90,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782705157,1,Change hero,200,OK,Thread Group 1-90,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782705158,1,Delete hero,200,OK,Thread Group 1-90,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782705162,3,Get all heros,200,OK,Thread Group 1-91,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,1
+1766782705165,1,Get hero by id,200,OK,Thread Group 1-91,text,true,,271,129,1,1,http://localhost:3001/character/24,0,0,0
+1766782705166,0,Create hero,201,Created,Thread Group 1-91,text,true,,278,231,1,1,http://localhost:3001/character,0,0,0
+1766782705167,0,Change hero,200,OK,Thread Group 1-91,text,true,,273,235,1,1,http://localhost:3001/character/2847,0,0,0
+1766782705167,1,Delete hero,200,OK,Thread Group 1-91,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782705172,2,Get all heros,200,OK,Thread Group 1-92,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,0
+1766782705174,1,Get hero by id,200,OK,Thread Group 1-92,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782705175,1,Create hero,201,Created,Thread Group 1-92,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782705176,1,Change hero,200,OK,Thread Group 1-92,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782705177,0,Delete hero,200,OK,Thread Group 1-92,text,true,,293,217,1,1,http://localhost:3001/character/2847,0,0,0
+1766782705182,3,Get all heros,200,OK,Thread Group 1-93,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,0
+1766782705185,1,Get hero by id,200,OK,Thread Group 1-93,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782705186,2,Create hero,201,Created,Thread Group 1-93,text,true,,278,231,1,1,http://localhost:3001/character,2,0,0
+1766782705188,2,Change hero,200,OK,Thread Group 1-93,text,true,,273,235,1,1,http://localhost:3001/character/2847,2,0,0
+1766782705190,1,Delete hero,200,OK,Thread Group 1-93,text,true,,293,217,2,2,http://localhost:3001/character/2847,1,0,0
+1766782705192,2,Get all heros,200,OK,Thread Group 1-94,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,0
+1766782705194,1,Get hero by id,200,OK,Thread Group 1-94,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782705195,1,Create hero,201,Created,Thread Group 1-94,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782705196,1,Change hero,200,OK,Thread Group 1-94,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782705197,1,Delete hero,200,OK,Thread Group 1-94,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782705202,2,Get all heros,200,OK,Thread Group 1-95,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,0
+1766782705204,1,Get hero by id,200,OK,Thread Group 1-95,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782705205,1,Create hero,201,Created,Thread Group 1-95,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782705206,1,Change hero,200,OK,Thread Group 1-95,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782705207,1,Delete hero,200,OK,Thread Group 1-95,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782705212,2,Get all heros,200,OK,Thread Group 1-96,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,0
+1766782705215,0,Get hero by id,200,OK,Thread Group 1-96,text,true,,271,129,1,1,http://localhost:3001/character/24,0,0,0
+1766782705215,1,Create hero,201,Created,Thread Group 1-96,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782705216,1,Change hero,200,OK,Thread Group 1-96,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782705217,1,Delete hero,200,OK,Thread Group 1-96,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782705222,3,Get all heros,200,OK,Thread Group 1-97,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,1
+1766782705225,1,Get hero by id,200,OK,Thread Group 1-97,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782705226,1,Create hero,201,Created,Thread Group 1-97,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782705227,1,Change hero,200,OK,Thread Group 1-97,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782705229,1,Delete hero,200,OK,Thread Group 1-97,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782705232,2,Get all heros,200,OK,Thread Group 1-98,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,0
+1766782705235,0,Get hero by id,200,OK,Thread Group 1-98,text,true,,271,129,1,1,http://localhost:3001/character/24,0,0,0
+1766782705236,0,Create hero,201,Created,Thread Group 1-98,text,true,,278,231,1,1,http://localhost:3001/character,0,0,0
+1766782705237,1,Change hero,200,OK,Thread Group 1-98,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782705238,0,Delete hero,200,OK,Thread Group 1-98,text,true,,293,217,1,1,http://localhost:3001/character/2847,0,0,0
+1766782705242,2,Get all heros,200,OK,Thread Group 1-99,text,true,,110127,127,1,1,http://localhost:3001/characters,2,0,0
+1766782705245,0,Get hero by id,200,OK,Thread Group 1-99,text,true,,271,129,1,1,http://localhost:3001/character/24,0,0,0
+1766782705245,1,Create hero,201,Created,Thread Group 1-99,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782705246,1,Change hero,200,OK,Thread Group 1-99,text,true,,273,235,1,1,http://localhost:3001/character/2847,1,0,0
+1766782705247,1,Delete hero,200,OK,Thread Group 1-99,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
+1766782705251,3,Get all heros,200,OK,Thread Group 1-100,text,true,,110127,127,1,1,http://localhost:3001/characters,3,0,1
+1766782705254,1,Get hero by id,200,OK,Thread Group 1-100,text,true,,271,129,1,1,http://localhost:3001/character/24,1,0,0
+1766782705255,1,Create hero,201,Created,Thread Group 1-100,text,true,,278,231,1,1,http://localhost:3001/character,1,0,0
+1766782705256,2,Change hero,200,OK,Thread Group 1-100,text,true,,273,235,1,1,http://localhost:3001/character/2847,2,0,0
+1766782705258,1,Delete hero,200,OK,Thread Group 1-100,text,true,,293,217,1,1,http://localhost:3001/character/2847,1,0,0
