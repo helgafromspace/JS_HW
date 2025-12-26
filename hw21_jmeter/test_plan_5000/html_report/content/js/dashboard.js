@@ -133,7 +133,7 @@ $(document).ready(function() {
         widgets: ['zebra']
     });
 
-    var data = {"OkPercent": 98.137, "KoPercent": 1.863};
+    var data = {"OkPercent": 98.106, "KoPercent": 1.894};
     var dataset = [
         {
             "label" : "FAIL",
@@ -173,7 +173,7 @@ $(document).ready(function() {
     });
 
     // Creates APDEX table
-    createTable($("#apdexTable"), {"supportsControllersDiscrimination": true, "overall": {"data": [0.936285, 500, 1500, "Total"], "isController": false}, "titles": ["Apdex", "T (Toleration threshold)", "F (Frustration threshold)", "Label"], "items": [{"data": [1.0, 500, 1500, "Delete hero"], "isController": false}, {"data": [1.0, 500, 1500, "Change hero"], "isController": false}, {"data": [0.924825, 500, 1500, "Get hero by id"], "isController": false}, {"data": [0.7566, 500, 1500, "Get all heros"], "isController": false}, {"data": [1.0, 500, 1500, "Create hero"], "isController": false}]}, function(index, item){
+    createTable($("#apdexTable"), {"supportsControllersDiscrimination": true, "overall": {"data": [0.93678, 500, 1500, "Total"], "isController": false}, "titles": ["Apdex", "T (Toleration threshold)", "F (Frustration threshold)", "Label"], "items": [{"data": [1.0, 500, 1500, "Delete hero"], "isController": false}, {"data": [1.0, 500, 1500, "Change hero"], "isController": false}, {"data": [0.928425, 500, 1500, "Get hero by id"], "isController": false}, {"data": [0.755475, 500, 1500, "Get all heros"], "isController": false}, {"data": [1.0, 500, 1500, "Create hero"], "isController": false}]}, function(index, item){
         switch(index){
             case 0:
                 item = item.toFixed(3);
@@ -187,7 +187,7 @@ $(document).ready(function() {
     }, [[0, 0]], 3);
 
     // Create statistics table
-    createTable($("#statisticsTable"), {"supportsControllersDiscrimination": true, "overall": {"data": ["Total", 100000, 1863, 1.863, 568.2511899999989, 0, 21236, 5.0, 9.0, 2199.850000000002, 21208.0, 4022.6879600949355, 7155.4088889461555, 726.8886755677017], "isController": false}, "titles": ["Label", "#Samples", "FAIL", "Error %", "Average", "Min", "Max", "Median", "90th pct", "95th pct", "99th pct", "Transactions/s", "Received", "Sent"], "items": [{"data": ["Delete hero", 20000, 0, 0.0, 7.234850000000053, 0, 117, 4.0, 16.0, 22.0, 46.9900000000016, 811.3919428780072, 232.16585865552355, 171.15298795082964], "isController": false}, {"data": ["Change hero", 20000, 0, 0.0, 7.291049999999997, 0, 118, 4.0, 16.0, 22.0, 50.0, 811.1615833874107, 215.464795587281, 185.3630962037638], "isController": false}, {"data": ["Get hero by id", 20000, 0, 0.0, 234.01054999999974, 0, 5535, 5.0, 50.0, 1996.9500000000007, 4794.960000000006, 806.9396812588259, 213.55532580189632, 101.65548718983256], "isController": false}, {"data": ["Get all heros", 20000, 1863, 9.315, 2585.1595499999894, 0, 21236, 6.0, 15000.0, 15001.0, 21208.0, 804.5699573577922, 6281.198339380179, 90.49050953163972], "isController": false}, {"data": ["Create hero", 20000, 0, 0.0, 7.5599499999999775, 0, 119, 5.0, 15.0, 22.0, 49.0, 807.2328059412334, 218.36278051340005, 182.10036930900873], "isController": false}]}, function(index, item){
+    createTable($("#statisticsTable"), {"supportsControllersDiscrimination": true, "overall": {"data": ["Total", 100000, 1894, 1.894, 560.4380099999916, 0, 21237, 4.0, 10.0, 1889.9500000000007, 21204.0, 4030.4703558905326, 1588.6702691094677, 725.542129750917], "isController": false}, "titles": ["Label", "#Samples", "FAIL", "Error %", "Average", "Min", "Max", "Median", "90th pct", "95th pct", "99th pct", "Transactions/s", "Received", "Sent"], "items": [{"data": ["Delete hero", 20000, 0, 0.0, 7.239299999999984, 0, 147, 4.0, 15.0, 23.0, 60.0, 811.5565654926148, 232.21296258724234, 170.27625734205083], "isController": false}, {"data": ["Change hero", 20000, 0, 0.0, 7.347449999999998, 0, 150, 4.0, 16.0, 26.0, 58.0, 810.9971209602206, 214.51028287326142, 184.41468658762824], "isController": false}, {"data": ["Get hero by id", 20000, 0, 0.0, 201.3880499999995, 0, 4818, 4.0, 61.0, 1876.9500000000007, 4448.990000000002, 808.0481596703164, 211.4813542887156, 101.00601995878954], "isController": false}, {"data": ["Get all heros", 20000, 1894, 9.47, 2578.5953500000187, 0, 21237, 5.0, 15000.0, 15001.0, 21204.0, 806.1265618702135, 716.7164197904071, 90.51061504937526], "isController": false}, {"data": ["Create hero", 20000, 0, 0.0, 7.619900000000019, 0, 164, 4.0, 15.0, 24.0, 58.0, 808.472794890452, 217.7902148895424, 182.38009337860782], "isController": false}]}, function(index, item){
         switch(index){
             // Errors pct
             case 3:
@@ -217,7 +217,7 @@ $(document).ready(function() {
     }, [[0, 0]], 0, summaryTableHeader);
 
     // Create error table
-    createTable($("#errorsTable"), {"supportsControllersDiscrimination": false, "titles": ["Type of error", "Number of errors", "% in errors", "% in all samples"], "items": [{"data": ["Non HTTP response code: java.net.SocketException/Non HTTP response message: Connection reset", 1862, 99.94632313472893, 1.862], "isController": false}, {"data": ["Non HTTP response code: org.apache.http.NoHttpResponseException/Non HTTP response message: localhost:3001 failed to respond", 1, 0.05367686527106817, 0.001], "isController": false}]}, function(index, item){
+    createTable($("#errorsTable"), {"supportsControllersDiscrimination": false, "titles": ["Type of error", "Number of errors", "% in errors", "% in all samples"], "items": [{"data": ["Non HTTP response code: java.net.SocketException/Non HTTP response message: Connection reset", 1817, 95.93453009503696, 1.817], "isController": false}, {"data": ["Non HTTP response code: org.apache.http.NoHttpResponseException/Non HTTP response message: localhost:3001 failed to respond", 77, 4.065469904963042, 0.077], "isController": false}]}, function(index, item){
         switch(index){
             case 2:
             case 3:
@@ -228,7 +228,7 @@ $(document).ready(function() {
     }, [[1, 1]]);
 
         // Create top5 errors by sampler
-    createTable($("#top5ErrorsBySamplerTable"), {"supportsControllersDiscrimination": false, "overall": {"data": ["Total", 100000, 1863, "Non HTTP response code: java.net.SocketException/Non HTTP response message: Connection reset", 1862, "Non HTTP response code: org.apache.http.NoHttpResponseException/Non HTTP response message: localhost:3001 failed to respond", 1, "", "", "", "", "", ""], "isController": false}, "titles": ["Sample", "#Samples", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors"], "items": [{"data": [], "isController": false}, {"data": [], "isController": false}, {"data": [], "isController": false}, {"data": ["Get all heros", 20000, 1863, "Non HTTP response code: java.net.SocketException/Non HTTP response message: Connection reset", 1862, "Non HTTP response code: org.apache.http.NoHttpResponseException/Non HTTP response message: localhost:3001 failed to respond", 1, "", "", "", "", "", ""], "isController": false}, {"data": [], "isController": false}]}, function(index, item){
+    createTable($("#top5ErrorsBySamplerTable"), {"supportsControllersDiscrimination": false, "overall": {"data": ["Total", 100000, 1894, "Non HTTP response code: java.net.SocketException/Non HTTP response message: Connection reset", 1817, "Non HTTP response code: org.apache.http.NoHttpResponseException/Non HTTP response message: localhost:3001 failed to respond", 77, "", "", "", "", "", ""], "isController": false}, "titles": ["Sample", "#Samples", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors"], "items": [{"data": [], "isController": false}, {"data": [], "isController": false}, {"data": [], "isController": false}, {"data": ["Get all heros", 20000, 1894, "Non HTTP response code: java.net.SocketException/Non HTTP response message: Connection reset", 1817, "Non HTTP response code: org.apache.http.NoHttpResponseException/Non HTTP response message: localhost:3001 failed to respond", 77, "", "", "", "", "", ""], "isController": false}, {"data": [], "isController": false}]}, function(index, item){
         return item;
     }, [[0, 0]], 0);
 

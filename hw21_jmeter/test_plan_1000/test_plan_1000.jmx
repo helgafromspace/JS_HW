@@ -11,7 +11,6 @@
         <intProp name="ThreadGroup.num_threads">1000</intProp>
         <intProp name="ThreadGroup.ramp_time">1</intProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
-        <boolProp name="ThreadGroup.scheduler">true</boolProp>
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
           <stringProp name="LoopController.loops">2</stringProp>
@@ -19,7 +18,7 @@
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get all heros" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get all heros">
           <stringProp name="HTTPSampler.domain">${url}</stringProp>
           <stringProp name="HTTPSampler.port">3001</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
@@ -71,13 +70,8 @@
             <stringProp name="filename"></stringProp>
           </ResultCollector>
           <hashTree/>
-          <DurationAssertion guiclass="DurationAssertionGui" testclass="DurationAssertion" testname="Duration Assertion" enabled="true">
-            <stringProp name="DurationAssertion.duration">500</stringProp>
-            <stringProp name="Assertion.scope">all</stringProp>
-          </DurationAssertion>
-          <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get hero by id" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get hero by id">
           <stringProp name="HTTPSampler.domain">${url}</stringProp>
           <stringProp name="HTTPSampler.port">3001</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
@@ -129,13 +123,8 @@
             <stringProp name="filename"></stringProp>
           </ResultCollector>
           <hashTree/>
-          <DurationAssertion guiclass="DurationAssertionGui" testclass="DurationAssertion" testname="Duration Assertion" enabled="true">
-            <stringProp name="DurationAssertion.duration"></stringProp>
-            <stringProp name="Assertion.scope">all</stringProp>
-          </DurationAssertion>
-          <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create hero" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create hero">
           <stringProp name="HTTPSampler.domain">${url}</stringProp>
           <stringProp name="HTTPSampler.port">3001</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
@@ -210,13 +199,8 @@
             <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
           </JSONPostProcessor>
           <hashTree/>
-          <DurationAssertion guiclass="DurationAssertionGui" testclass="DurationAssertion" testname="Duration Assertion" enabled="true">
-            <stringProp name="DurationAssertion.duration"></stringProp>
-            <stringProp name="Assertion.scope">all</stringProp>
-          </DurationAssertion>
-          <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Change hero" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Change hero">
           <stringProp name="HTTPSampler.domain">${url}</stringProp>
           <stringProp name="HTTPSampler.port">3001</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
@@ -284,13 +268,8 @@
             <stringProp name="filename"></stringProp>
           </ResultCollector>
           <hashTree/>
-          <DurationAssertion guiclass="DurationAssertionGui" testclass="DurationAssertion" testname="Duration Assertion" enabled="true">
-            <stringProp name="DurationAssertion.duration"></stringProp>
-            <stringProp name="Assertion.scope">all</stringProp>
-          </DurationAssertion>
-          <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Delete hero" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Delete hero">
           <stringProp name="HTTPSampler.domain">${url}</stringProp>
           <stringProp name="HTTPSampler.port">3001</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
@@ -341,11 +320,6 @@
             </objProp>
             <stringProp name="filename"></stringProp>
           </ResultCollector>
-          <hashTree/>
-          <DurationAssertion guiclass="DurationAssertionGui" testclass="DurationAssertion" testname="Duration Assertion" enabled="true">
-            <stringProp name="DurationAssertion.duration"></stringProp>
-            <stringProp name="Assertion.scope">all</stringProp>
-          </DurationAssertion>
           <hashTree/>
         </hashTree>
         <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="true">
@@ -460,7 +434,7 @@
         </ResultCollector>
         <hashTree/>
       </hashTree>
-      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
         <collectionProp name="Arguments.arguments">
           <elementProp name="url" elementType="Argument">
             <stringProp name="Argument.name">url</stringProp>
@@ -469,7 +443,7 @@
           </elementProp>
           <elementProp name="id" elementType="Argument">
             <stringProp name="Argument.name">id</stringProp>
-            <stringProp name="Argument.value">${__Random(20,80, RandomId)}</stringProp>
+            <stringProp name="Argument.value">${__Random(1,3, RandomId)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
