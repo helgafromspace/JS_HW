@@ -16,7 +16,7 @@ db.userProfile.find({country: null})
 
 db.userProfile.find({
   $where: function() { 
-    return this.firstName.match(/[^a-zA-Z]/);
+    return this.firstName[0].match(/[^a-zA-Z]/);
   }
 })
 
