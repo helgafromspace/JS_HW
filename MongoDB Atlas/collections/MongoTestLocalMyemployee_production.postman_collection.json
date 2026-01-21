@@ -1,0 +1,1359 @@
+{
+	"info": {
+		"_postman_id": "8fb6d7be-ee1f-4c78-9e0f-18b9a29ec30e",
+		"name": "MongoTestLocalMyemployee_production",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18802411"
+	},
+	"item": [
+		{
+			"name": "Create Document local",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"if (pm.response.code === 201) {",
+							"    var jsonData = pm.response.json();",
+							"    console.log(jsonData._id)",
+							"",
+							"    pm.collectionVariables.set(\"docId\", jsonData._id);",
+							"    pm.collectionVariables.set(\"name\", jsonData.name);",
+							"    ",
+							"    pm.test(\"Status code is 201\", function () {",
+							"        pm.response.to.have.status(201);",
+							"    });",
+							"}",
+							"else{",
+							"    console.log(`Check your request, response status code is  - `, pm.response.code);",
+							"    console.log(\"Request was: \", pm.request.url);",
+							"    console.log(pm.response.json())",
+							"    postman.setNextRequest(null);",
+							"}",
+							"",
+							"let schema = {",
+							"  \"type\": \"object\",",
+							"  \"properties\": {",
+							"    \"_id\": {",
+							"      \"type\": \"string\"",
+							"    },",
+							"    \"listing_url\": {",
+							"      \"type\": \"string\"",
+							"    },",
+							"    \"name\": {",
+							"      \"type\": \"string\"",
+							"    },",
+							"    \"summary\": {",
+							"      \"type\": \"string\"",
+							"    },",
+							"    \"space\": {",
+							"      \"type\": \"string\"",
+							"    },",
+							"    \"description\": {",
+							"      \"type\": \"string\"",
+							"    },",
+							"    \"neighborhood_overview\": {",
+							"      \"type\": \"string\"",
+							"    },",
+							"    \"notes\": {",
+							"      \"type\": \"string\"",
+							"    },",
+							"    \"transit\": {",
+							"      \"type\": \"string\"",
+							"    },",
+							"    \"access\": {",
+							"      \"type\": \"string\"",
+							"    },",
+							"    \"interaction\": {",
+							"      \"type\": \"string\"",
+							"    },",
+							"    \"house_rules\": {",
+							"      \"type\": \"string\"",
+							"    },",
+							"    \"property_type\": {",
+							"      \"type\": \"string\"",
+							"    },",
+							"    \"room_type\": {",
+							"      \"type\": \"string\"",
+							"    },",
+							"    \"bed_type\": {",
+							"      \"type\": \"string\"",
+							"    },",
+							"    \"minimum_nights\": {",
+							"      \"type\": \"string\"",
+							"    },",
+							"    \"maximum_nights\": {",
+							"      \"type\": \"string\"",
+							"    },",
+							"    \"cancellation_policy\": {",
+							"      \"type\": \"string\"",
+							"    },",
+							"    \"last_scraped\": {",
+							"      \"type\": \"object\",",
+							"      \"properties\": {",
+							"        \"$date\": {",
+							"          \"type\": \"string\"",
+							"        }",
+							"      }",
+							"    },",
+							"    \"calendar_last_scraped\": {",
+							"      \"type\": \"object\",",
+							"      \"properties\": {",
+							"        \"$date\": {",
+							"          \"type\": \"string\"",
+							"        }",
+							"      }",
+							"    },",
+							"    \"first_review\": {",
+							"      \"type\": \"object\",",
+							"      \"properties\": {",
+							"        \"$date\": {",
+							"          \"type\": \"string\"",
+							"        }",
+							"      }",
+							"    },",
+							"    \"last_review\": {",
+							"      \"type\": \"object\",",
+							"      \"properties\": {",
+							"        \"$date\": {",
+							"          \"type\": \"string\"",
+							"        }",
+							"      }",
+							"    },",
+							"    \"accommodates\": {",
+							"      \"type\": \"number\"",
+							"    },",
+							"    \"bedrooms\": {",
+							"      \"type\": \"number\"",
+							"    },",
+							"    \"beds\": {",
+							"      \"type\": \"number\"",
+							"    },",
+							"    \"number_of_reviews\": {",
+							"      \"type\": \"number\"",
+							"    },",
+							"    \"bathrooms\": {",
+							"      \"type\": \"object\",",
+							"      \"properties\": {",
+							"        \"$numberDecimal\": {",
+							"          \"type\": \"string\"",
+							"        }",
+							"      }",
+							"    },",
+							"    \"amenities\": {",
+							"      \"type\": \"array\",",
+							"      \"items\": {",
+							"        \"type\": \"string\"",
+							"      }",
+							"    },",
+							"    \"price\": {",
+							"      \"type\": \"object\",",
+							"      \"properties\": {",
+							"        \"$numberDecimal\": {",
+							"          \"type\": \"string\"",
+							"        }",
+							"      }",
+							"    },",
+							"    \"security_deposit\": {",
+							"      \"type\": \"object\",",
+							"      \"properties\": {",
+							"        \"$numberDecimal\": {",
+							"          \"type\": \"string\"",
+							"        }",
+							"      }",
+							"    },",
+							"    \"cleaning_fee\": {",
+							"      \"type\": \"object\",",
+							"      \"properties\": {",
+							"        \"$numberDecimal\": {",
+							"          \"type\": \"string\"",
+							"        }",
+							"      }",
+							"    },",
+							"    \"extra_people\": {",
+							"      \"type\": \"object\",",
+							"      \"properties\": {",
+							"        \"$numberDecimal\": {",
+							"          \"type\": \"string\"",
+							"        }",
+							"      }",
+							"    },",
+							"    \"guests_included\": {",
+							"      \"type\": \"object\",",
+							"      \"properties\": {",
+							"        \"$numberDecimal\": {",
+							"          \"type\": \"string\"",
+							"        }",
+							"      }",
+							"    },",
+							"    \"images\": {",
+							"      \"type\": \"object\",",
+							"      \"properties\": {",
+							"        \"thumbnail_url\": {",
+							"          \"type\": \"string\"",
+							"        },",
+							"        \"medium_url\": {",
+							"          \"type\": \"string\"",
+							"        },",
+							"        \"picture_url\": {",
+							"          \"type\": \"string\"",
+							"        },",
+							"        \"xl_picture_url\": {",
+							"          \"type\": \"string\"",
+							"        }",
+							"      }",
+							"    },",
+							"    \"host\": {",
+							"      \"type\": \"object\",",
+							"      \"properties\": {",
+							"        \"host_id\": {",
+							"          \"type\": \"string\"",
+							"        },",
+							"        \"host_url\": {",
+							"          \"type\": \"string\"",
+							"        },",
+							"        \"host_name\": {",
+							"          \"type\": \"string\"",
+							"        },",
+							"        \"host_location\": {",
+							"          \"type\": \"string\"",
+							"        },",
+							"        \"host_about\": {",
+							"          \"type\": \"string\"",
+							"        },",
+							"        \"host_response_time\": {",
+							"          \"type\": \"string\"",
+							"        },",
+							"        \"host_thumbnail_url\": {",
+							"          \"type\": \"string\"",
+							"        },",
+							"        \"host_picture_url\": {",
+							"          \"type\": \"string\"",
+							"        },",
+							"        \"host_neighbourhood\": {",
+							"          \"type\": \"string\"",
+							"        },",
+							"        \"host_response_rate\": {",
+							"          \"type\": \"number\"",
+							"        },",
+							"        \"host_is_superhost\": {",
+							"          \"type\": \"boolean\"",
+							"        },",
+							"        \"host_has_profile_pic\": {",
+							"          \"type\": \"boolean\"",
+							"        },",
+							"        \"host_identity_verified\": {",
+							"          \"type\": \"boolean\"",
+							"        },",
+							"        \"host_listings_count\": {",
+							"          \"type\": \"number\"",
+							"        },",
+							"        \"host_total_listings_count\": {",
+							"          \"type\": \"number\"",
+							"        },",
+							"        \"host_verifications\": {",
+							"          \"type\": \"array\",",
+							"          \"items\": {",
+							"            \"type\": \"string\"",
+							"          }",
+							"        }",
+							"      }",
+							"    },",
+							"    \"address\": {",
+							"      \"type\": \"object\",",
+							"      \"properties\": {",
+							"        \"street\": {",
+							"          \"type\": \"string\"",
+							"        },",
+							"        \"suburb\": {",
+							"          \"type\": \"string\"",
+							"        },",
+							"        \"government_area\": {",
+							"          \"type\": \"string\"",
+							"        },",
+							"        \"market\": {",
+							"          \"type\": \"string\"",
+							"        },",
+							"        \"country\": {",
+							"          \"type\": \"string\"",
+							"        },",
+							"        \"country_code\": {",
+							"          \"type\": \"string\"",
+							"        },",
+							"        \"location\": {",
+							"          \"type\": \"object\",",
+							"          \"properties\": {",
+							"            \"type\": {",
+							"              \"type\": \"string\"",
+							"            },",
+							"            \"coordinates\": {",
+							"              \"type\": \"array\",",
+							"              \"items\": {",
+							"                \"type\": \"number\"",
+							"              }",
+							"            },",
+							"            \"is_location_exact\": {",
+							"              \"type\": \"boolean\"",
+							"            }",
+							"          }",
+							"        }",
+							"      }",
+							"    },",
+							"    \"availability\": {",
+							"      \"type\": \"object\",",
+							"      \"properties\": {",
+							"        \"availability_30\": {",
+							"          \"type\": \"number\"",
+							"        },",
+							"        \"availability_60\": {",
+							"          \"type\": \"number\"",
+							"        },",
+							"        \"availability_90\": {",
+							"          \"type\": \"number\"",
+							"        },",
+							"        \"availability_365\": {",
+							"          \"type\": \"number\"",
+							"        }",
+							"      }",
+							"    },",
+							"    \"review_scores\": {",
+							"      \"type\": \"object\",",
+							"      \"properties\": {",
+							"        \"review_scores_accuracy\": {",
+							"          \"type\": \"number\"",
+							"        },",
+							"        \"review_scores_cleanliness\": {",
+							"          \"type\": \"number\"",
+							"        },",
+							"        \"review_scores_checkin\": {",
+							"          \"type\": \"number\"",
+							"        },",
+							"        \"review_scores_communication\": {",
+							"          \"type\": \"number\"",
+							"        },",
+							"        \"review_scores_location\": {",
+							"          \"type\": \"number\"",
+							"        },",
+							"        \"review_scores_value\": {",
+							"          \"type\": \"number\"",
+							"        },",
+							"        \"review_scores_rating\": {",
+							"          \"type\": \"number\"",
+							"        }",
+							"      }",
+							"    },",
+							"    \"reviews\": {",
+							"      \"type\": \"array\",",
+							"      \"items\": {",
+							"        \"type\": \"object\",",
+							"        \"properties\": {",
+							"          \"_id\": {",
+							"            \"type\": \"string\"",
+							"          },",
+							"          \"date\": {",
+							"            \"type\": \"object\",",
+							"            \"properties\": {",
+							"              \"$date\": {",
+							"                \"type\": \"string\"",
+							"              }",
+							"            }",
+							"          },",
+							"          \"listing_id\": {",
+							"            \"type\": \"string\"",
+							"          },",
+							"          \"reviewer_id\": {",
+							"            \"type\": \"string\"",
+							"          },",
+							"          \"reviewer_name\": {",
+							"            \"type\": \"string\"",
+							"          },",
+							"          \"comments\": {",
+							"            \"type\": \"string\"",
+							"          }",
+							"        },",
+							"        \"required\": [",
+							"          \"_id\",",
+							"          \"date\",",
+							"          \"listing_id\",",
+							"          \"reviewer_id\",",
+							"          \"reviewer_name\",",
+							"          \"comments\"",
+							"        ]",
+							"      }",
+							"    }",
+							"  }",
+							"}",
+							"pm.test(`JSON schema is valid on ${pm.iterationData.get(\"env_name\")} env at url ${pm.iterationData.get(\"base_url\")}`, function () {",
+							"  pm.response.to.have.jsonSchema(schema);",
+							"});",
+							"",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Access-Control-Request-Headers",
+						"value": "*"
+					},
+					{
+						"key": "api-key",
+						"value": "{{newAPIkey}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"{{$randomFullName}}\",\n    \"email\": \"{{$randomEmail}}\",\n    \"password\": \"{{$randomPassword}}\",\n    \"room_type\": \"Entire home/apt\",\n    \"bed_type\": \"Real Bed\",\n    \"minimum_nights\": \"1\",\n    \"maximum_nights\": \"10\",\n    \"price\": {\n        \"$numberDecimal\": \"100.00\"\n        },\n    \"__v\": 0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/:collection",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						":collection"
+					],
+					"variable": [
+						{
+							"key": "collection",
+							"value": "myemployee_production"
+						}
+					]
+				},
+				"description": "Using the `/findOne` endpoint will let you retrieve a single document from a collection. Use the `filter` property in the request body to specify the search criteria. If more than one document matches the criteria, only the first match will be returned."
+			},
+			"response": [
+				{
+					"name": "Find Document",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Access-Control-Request-Headers",
+								"value": "*"
+							},
+							{
+								"key": "api-key",
+								"value": "{{newAPIkey}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"collection\": \"myemployee_test\",\n    \"database\": \"myFirstDatabase\",\n    \"dataSource\": \"testCluster\",\n    \"projection\": {\n        \"_id\": 1\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://eu-central-1.aws.data.mongodb-api.com/app/data-bniuj/endpoint/data/v1/action/findOne",
+							"protocol": "https",
+							"host": [
+								"eu-central-1",
+								"aws",
+								"data",
+								"mongodb-api",
+								"com"
+							],
+							"path": [
+								"app",
+								"data-bniuj",
+								"endpoint",
+								"data",
+								"v1",
+								"action",
+								"findOne"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "content-encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						},
+						{
+							"key": "strict-transport-security",
+							"value": "max-age=31536000; includeSubdomains;"
+						},
+						{
+							"key": "vary",
+							"value": "Origin"
+						},
+						{
+							"key": "x-appservices-request-id",
+							"value": "65bca3948a87d43dfa26f77c"
+						},
+						{
+							"key": "x-frame-options",
+							"value": "DENY"
+						},
+						{
+							"key": "date",
+							"value": "Fri, 02 Feb 2024 08:11:01 GMT"
+						},
+						{
+							"key": "content-length",
+							"value": "71"
+						},
+						{
+							"key": "server",
+							"value": "mdbws"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"document\": {\n        \"_id\": \"60fff727eb3a58573fb3f984\"\n    }\n}"
+				},
+				{
+					"name": "Find Document valid response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Access-Control-Request-Headers",
+								"value": "*"
+							},
+							{
+								"key": "api-key",
+								"value": "{{newAPIkey}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"collection\": \"myemployee_test\",\n    \"database\": \"myFirstDatabase\",\n    \"dataSource\": \"testCluster\",\n    \"projection\": {\n        \"_id\": 1\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://eu-central-1.aws.data.mongodb-api.com/app/data-bniuj/endpoint/data/v1/action/findOne",
+							"protocol": "https",
+							"host": [
+								"eu-central-1",
+								"aws",
+								"data",
+								"mongodb-api",
+								"com"
+							],
+							"path": [
+								"app",
+								"data-bniuj",
+								"endpoint",
+								"data",
+								"v1",
+								"action",
+								"findOne"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "content-encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						},
+						{
+							"key": "strict-transport-security",
+							"value": "max-age=31536000; includeSubdomains;"
+						},
+						{
+							"key": "vary",
+							"value": "Origin"
+						},
+						{
+							"key": "x-appservices-request-id",
+							"value": "660ee39af67fc33e2313f49a"
+						},
+						{
+							"key": "x-frame-options",
+							"value": "DENY"
+						},
+						{
+							"key": "date",
+							"value": "Thu, 04 Apr 2024 17:30:03 GMT"
+						},
+						{
+							"key": "content-length",
+							"value": "225"
+						},
+						{
+							"key": "server",
+							"value": "mdbws"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"document\": {\n        \"_id\": \"60fff727eb3a58573fb3f984\",\n        \"name\": \"Santino42132\",\n        \"email\": \"Abigayle34132323@gmail.com\",\n        \"password\": \"$2b$10$Go23Pj0XUR02PpRdkEUIPOHRJEH/pK4UttKXeWjhbNHowJNNEWZ6e\",\n        \"created_date\": \"2021-07-27T12:08:07.422Z\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Find Documents local",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Access-Control-Request-Headers",
+						"value": "*"
+					},
+					{
+						"key": "api-key",
+						"value": "{{newAPIkey}}"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/myemployee_production",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"myemployee_production"
+					]
+				},
+				"description": "Using the `/findOne` endpoint will let you retrieve a single document from a collection. Use the `filter` property in the request body to specify the search criteria. If more than one document matches the criteria, only the first match will be returned."
+			},
+			"response": [
+				{
+					"name": "Find Document",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Access-Control-Request-Headers",
+								"value": "*"
+							},
+							{
+								"key": "api-key",
+								"value": "{{newAPIkey}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"collection\": \"myemployee_test\",\n    \"database\": \"myFirstDatabase\",\n    \"dataSource\": \"testCluster\",\n    \"projection\": {\n        \"_id\": 1\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://eu-central-1.aws.data.mongodb-api.com/app/data-bniuj/endpoint/data/v1/action/findOne",
+							"protocol": "https",
+							"host": [
+								"eu-central-1",
+								"aws",
+								"data",
+								"mongodb-api",
+								"com"
+							],
+							"path": [
+								"app",
+								"data-bniuj",
+								"endpoint",
+								"data",
+								"v1",
+								"action",
+								"findOne"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "content-encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						},
+						{
+							"key": "strict-transport-security",
+							"value": "max-age=31536000; includeSubdomains;"
+						},
+						{
+							"key": "vary",
+							"value": "Origin"
+						},
+						{
+							"key": "x-appservices-request-id",
+							"value": "65bca3948a87d43dfa26f77c"
+						},
+						{
+							"key": "x-frame-options",
+							"value": "DENY"
+						},
+						{
+							"key": "date",
+							"value": "Fri, 02 Feb 2024 08:11:01 GMT"
+						},
+						{
+							"key": "content-length",
+							"value": "71"
+						},
+						{
+							"key": "server",
+							"value": "mdbws"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"document\": {\n        \"_id\": \"60fff727eb3a58573fb3f984\"\n    }\n}"
+				},
+				{
+					"name": "Find Document valid response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Access-Control-Request-Headers",
+								"value": "*"
+							},
+							{
+								"key": "api-key",
+								"value": "{{newAPIkey}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"collection\": \"myemployee_test\",\n    \"database\": \"myFirstDatabase\",\n    \"dataSource\": \"testCluster\",\n    \"projection\": {\n        \"_id\": 1\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://eu-central-1.aws.data.mongodb-api.com/app/data-bniuj/endpoint/data/v1/action/findOne",
+							"protocol": "https",
+							"host": [
+								"eu-central-1",
+								"aws",
+								"data",
+								"mongodb-api",
+								"com"
+							],
+							"path": [
+								"app",
+								"data-bniuj",
+								"endpoint",
+								"data",
+								"v1",
+								"action",
+								"findOne"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "content-encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						},
+						{
+							"key": "strict-transport-security",
+							"value": "max-age=31536000; includeSubdomains;"
+						},
+						{
+							"key": "vary",
+							"value": "Origin"
+						},
+						{
+							"key": "x-appservices-request-id",
+							"value": "660ee39af67fc33e2313f49a"
+						},
+						{
+							"key": "x-frame-options",
+							"value": "DENY"
+						},
+						{
+							"key": "date",
+							"value": "Thu, 04 Apr 2024 17:30:03 GMT"
+						},
+						{
+							"key": "content-length",
+							"value": "225"
+						},
+						{
+							"key": "server",
+							"value": "mdbws"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"document\": {\n        \"_id\": \"60fff727eb3a58573fb3f984\",\n        \"name\": \"Santino42132\",\n        \"email\": \"Abigayle34132323@gmail.com\",\n        \"password\": \"$2b$10$Go23Pj0XUR02PpRdkEUIPOHRJEH/pK4UttKXeWjhbNHowJNNEWZ6e\",\n        \"created_date\": \"2021-07-27T12:08:07.422Z\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Find Document local",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"if (pm.response.code === 200) {",
+							"    var jsonData = pm.response.json();",
+							"    console.log(jsonData.name)",
+							"    ",
+							"    pm.test(\"Status code is 200\", function () {",
+							"        pm.response.to.have.status(200);",
+							"    });",
+							"",
+							"    pm.test(\"Name corresponds to name at current docId\", function () {",
+							"        pm.expect(jsonData.name).to.be.eql(pm.collectionVariables.get(\"name\"));",
+							"    });",
+							"",
+							"}",
+							"else{",
+							"    console.log(`Check your request, response status code is  - `, pm.response.code);",
+							"    console.log(\"Request was: \", pm.request.url);",
+							"    console.log(pm.response.json())",
+							"    postman.setNextRequest(null);",
+							"}",
+							"",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Access-Control-Request-Headers",
+						"value": "*"
+					},
+					{
+						"key": "api-key",
+						"value": "{{newAPIkey}}"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/:collection/{{docId}}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						":collection",
+						"{{docId}}"
+					],
+					"variable": [
+						{
+							"key": "collection",
+							"value": "myemployee_production"
+						}
+					]
+				},
+				"description": "Using the `/findOne` endpoint will let you retrieve a single document from a collection. Use the `filter` property in the request body to specify the search criteria. If more than one document matches the criteria, only the first match will be returned."
+			},
+			"response": [
+				{
+					"name": "Find Document",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Access-Control-Request-Headers",
+								"value": "*"
+							},
+							{
+								"key": "api-key",
+								"value": "{{newAPIkey}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"collection\": \"myemployee_test\",\n    \"database\": \"myFirstDatabase\",\n    \"dataSource\": \"testCluster\",\n    \"projection\": {\n        \"_id\": 1\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://eu-central-1.aws.data.mongodb-api.com/app/data-bniuj/endpoint/data/v1/action/findOne",
+							"protocol": "https",
+							"host": [
+								"eu-central-1",
+								"aws",
+								"data",
+								"mongodb-api",
+								"com"
+							],
+							"path": [
+								"app",
+								"data-bniuj",
+								"endpoint",
+								"data",
+								"v1",
+								"action",
+								"findOne"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "content-encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						},
+						{
+							"key": "strict-transport-security",
+							"value": "max-age=31536000; includeSubdomains;"
+						},
+						{
+							"key": "vary",
+							"value": "Origin"
+						},
+						{
+							"key": "x-appservices-request-id",
+							"value": "65bca3948a87d43dfa26f77c"
+						},
+						{
+							"key": "x-frame-options",
+							"value": "DENY"
+						},
+						{
+							"key": "date",
+							"value": "Fri, 02 Feb 2024 08:11:01 GMT"
+						},
+						{
+							"key": "content-length",
+							"value": "71"
+						},
+						{
+							"key": "server",
+							"value": "mdbws"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"document\": {\n        \"_id\": \"60fff727eb3a58573fb3f984\"\n    }\n}"
+				},
+				{
+					"name": "Find Document valid response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Access-Control-Request-Headers",
+								"value": "*"
+							},
+							{
+								"key": "api-key",
+								"value": "{{newAPIkey}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"collection\": \"myemployee_test\",\n    \"database\": \"myFirstDatabase\",\n    \"dataSource\": \"testCluster\",\n    \"projection\": {\n        \"_id\": 1\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://eu-central-1.aws.data.mongodb-api.com/app/data-bniuj/endpoint/data/v1/action/findOne",
+							"protocol": "https",
+							"host": [
+								"eu-central-1",
+								"aws",
+								"data",
+								"mongodb-api",
+								"com"
+							],
+							"path": [
+								"app",
+								"data-bniuj",
+								"endpoint",
+								"data",
+								"v1",
+								"action",
+								"findOne"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "content-encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						},
+						{
+							"key": "strict-transport-security",
+							"value": "max-age=31536000; includeSubdomains;"
+						},
+						{
+							"key": "vary",
+							"value": "Origin"
+						},
+						{
+							"key": "x-appservices-request-id",
+							"value": "660ee39af67fc33e2313f49a"
+						},
+						{
+							"key": "x-frame-options",
+							"value": "DENY"
+						},
+						{
+							"key": "date",
+							"value": "Thu, 04 Apr 2024 17:30:03 GMT"
+						},
+						{
+							"key": "content-length",
+							"value": "225"
+						},
+						{
+							"key": "server",
+							"value": "mdbws"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"document\": {\n        \"_id\": \"60fff727eb3a58573fb3f984\",\n        \"name\": \"Santino42132\",\n        \"email\": \"Abigayle34132323@gmail.com\",\n        \"password\": \"$2b$10$Go23Pj0XUR02PpRdkEUIPOHRJEH/pK4UttKXeWjhbNHowJNNEWZ6e\",\n        \"created_date\": \"2021-07-27T12:08:07.422Z\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Document local",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"if (pm.response.code === 200) {",
+							"    var jsonData = pm.response.json();",
+							"    console.log(jsonData.deletedDocument._id)",
+							"    pm.test(\"Delete message is correct\", function () {",
+							"        pm.expect(jsonData.message).to.be.eql(\"Документ видалено\");",
+							"    });",
+							"    pm.test(\"Deleted id corresponds to current docId\", function () {",
+							"        pm.expect(jsonData.deletedDocument._id).to.be.eql(pm.collectionVariables.get(\"docId\"));",
+							"    });",
+							"}",
+							"else{",
+							"    console.log(`Check your request, response status code is  - `, pm.response.code);",
+							"    console.log(\"Request was: \", pm.request.url);",
+							"    console.log(pm.response.json())",
+							"    postman.setNextRequest(null);",
+							"}",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Access-Control-Request-Headers",
+						"value": "*"
+					},
+					{
+						"key": "api-key",
+						"value": "{{newAPIkey}}"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/:collection/{{docId}}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						":collection",
+						"{{docId}}"
+					],
+					"variable": [
+						{
+							"key": "collection",
+							"value": "myemployee_production"
+						}
+					]
+				},
+				"description": "Using the `/findOne` endpoint will let you retrieve a single document from a collection. Use the `filter` property in the request body to specify the search criteria. If more than one document matches the criteria, only the first match will be returned."
+			},
+			"response": [
+				{
+					"name": "Find Document",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Access-Control-Request-Headers",
+								"value": "*"
+							},
+							{
+								"key": "api-key",
+								"value": "{{newAPIkey}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"collection\": \"myemployee_test\",\n    \"database\": \"myFirstDatabase\",\n    \"dataSource\": \"testCluster\",\n    \"projection\": {\n        \"_id\": 1\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://eu-central-1.aws.data.mongodb-api.com/app/data-bniuj/endpoint/data/v1/action/findOne",
+							"protocol": "https",
+							"host": [
+								"eu-central-1",
+								"aws",
+								"data",
+								"mongodb-api",
+								"com"
+							],
+							"path": [
+								"app",
+								"data-bniuj",
+								"endpoint",
+								"data",
+								"v1",
+								"action",
+								"findOne"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "content-encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						},
+						{
+							"key": "strict-transport-security",
+							"value": "max-age=31536000; includeSubdomains;"
+						},
+						{
+							"key": "vary",
+							"value": "Origin"
+						},
+						{
+							"key": "x-appservices-request-id",
+							"value": "65bca3948a87d43dfa26f77c"
+						},
+						{
+							"key": "x-frame-options",
+							"value": "DENY"
+						},
+						{
+							"key": "date",
+							"value": "Fri, 02 Feb 2024 08:11:01 GMT"
+						},
+						{
+							"key": "content-length",
+							"value": "71"
+						},
+						{
+							"key": "server",
+							"value": "mdbws"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"document\": {\n        \"_id\": \"60fff727eb3a58573fb3f984\"\n    }\n}"
+				},
+				{
+					"name": "Find Document valid response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Access-Control-Request-Headers",
+								"value": "*"
+							},
+							{
+								"key": "api-key",
+								"value": "{{newAPIkey}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"collection\": \"myemployee_test\",\n    \"database\": \"myFirstDatabase\",\n    \"dataSource\": \"testCluster\",\n    \"projection\": {\n        \"_id\": 1\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://eu-central-1.aws.data.mongodb-api.com/app/data-bniuj/endpoint/data/v1/action/findOne",
+							"protocol": "https",
+							"host": [
+								"eu-central-1",
+								"aws",
+								"data",
+								"mongodb-api",
+								"com"
+							],
+							"path": [
+								"app",
+								"data-bniuj",
+								"endpoint",
+								"data",
+								"v1",
+								"action",
+								"findOne"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "content-encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						},
+						{
+							"key": "strict-transport-security",
+							"value": "max-age=31536000; includeSubdomains;"
+						},
+						{
+							"key": "vary",
+							"value": "Origin"
+						},
+						{
+							"key": "x-appservices-request-id",
+							"value": "660ee39af67fc33e2313f49a"
+						},
+						{
+							"key": "x-frame-options",
+							"value": "DENY"
+						},
+						{
+							"key": "date",
+							"value": "Thu, 04 Apr 2024 17:30:03 GMT"
+						},
+						{
+							"key": "content-length",
+							"value": "225"
+						},
+						{
+							"key": "server",
+							"value": "mdbws"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"document\": {\n        \"_id\": \"60fff727eb3a58573fb3f984\",\n        \"name\": \"Santino42132\",\n        \"email\": \"Abigayle34132323@gmail.com\",\n        \"password\": \"$2b$10$Go23Pj0XUR02PpRdkEUIPOHRJEH/pK4UttKXeWjhbNHowJNNEWZ6e\",\n        \"created_date\": \"2021-07-27T12:08:07.422Z\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "docId",
+			"value": ""
+		},
+		{
+			"key": "name",
+			"value": ""
+		}
+	]
+}
